@@ -1,6 +1,7 @@
 ﻿using Profile;
 using Tools;
 using UnityEngine;
+using Game.CursorTrail;
 
 namespace Ui
 {
@@ -15,6 +16,9 @@ namespace Ui
             _profilePlayer = profilePlayer;
             _view = LoadView(placeForUi);
             _view.Init(StartGame);
+            CursorTrailController cursorTrailController = new CursorTrailController();
+            AddController(cursorTrailController);
+            
         }
 
         private MainMenuView LoadView(Transform placeForUi)

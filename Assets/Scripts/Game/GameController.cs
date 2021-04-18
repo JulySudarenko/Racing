@@ -1,4 +1,5 @@
-﻿using Game.InputLogic;
+﻿using Game.CursorTrail;
+using Game.InputLogic;
 using Game.TapeBackground;
 using Profile;
 using Tools;

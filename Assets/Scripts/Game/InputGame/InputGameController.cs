@@ -6,7 +6,7 @@ namespace Game.InputLogic
 {
     internal sealed class InputGameController : BaseController
     {
-        private readonly ResourcePath _viewPath = new ResourcePath {PathResource = "Prefabs/endlessMove"};
+        private readonly ResourcePath _viewPath = new ResourcePath {PathResource = "Prefabs/swipeInputView"};
         private readonly BaseInputView _view;
         
         public InputGameController(SubscriptionProperty<float> leftMove, SubscriptionProperty<float> rightMove, Car car)
@@ -21,6 +21,6 @@ namespace Game.InputLogic
             AddGameObjects(objView);
             return objView.GetComponent<BaseInputView>();
         }
-    } 
+    }
 }
 
