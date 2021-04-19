@@ -53,9 +53,6 @@ namespace Game.InputLogic
         private void MoveToLeft()
         {
             OnLeftMove(-_speed * Time.deltaTime);
-
-            if (_speed < 0)
-                _speed = 0;
         }
     }
 }

@@ -1,5 +1,4 @@
-﻿using Game.CursorTrail;
-using Game.InputLogic;
+﻿using Game.InputLogic;
 using Game.TapeBackground;
 using Profile;
 using Tools;
@@ -17,7 +16,7 @@ namespace Game
             AddController(tapeBackgroundController);
             InputGameController inputGameController = new InputGameController(leftMoveDiff, rightMoveDiff, profilePlayer.CurrentCar);
             AddController(inputGameController);
-            CarController carController = new CarController();
+            CarController carController = new CarController(leftMoveDiff, rightMoveDiff);
             AddController(carController);
         }
     }

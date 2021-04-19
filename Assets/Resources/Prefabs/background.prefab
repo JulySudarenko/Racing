@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _leftBorder: -35.61
-  _rightBorder: 35.62
+  _rightBorder: 53.43
   _relativeSpeedRate: 1
 --- !u!1 &2568450156852823711
 GameObject:
@@ -194,7 +194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _leftBorder: -20.46
-  _rightBorder: 20.46
+  _rightBorder: 40.92
   _relativeSpeedRate: 0.3
 --- !u!1 &2807479611546755954
 GameObject:
@@ -372,7 +372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _leftBorder: -35.61
-  _rightBorder: 35.62
+  _rightBorder: 53.43
   _relativeSpeedRate: 1
 --- !u!1 &3590461184429166328
 GameObject:
@@ -470,7 +470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _leftBorder: -35.61
-  _rightBorder: 35.62
+  _rightBorder: 53.43
   _relativeSpeedRate: 1
 --- !u!1 &5625024096290961257
 GameObject:
@@ -568,7 +568,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _leftBorder: -20.46
-  _rightBorder: 20.46
+  _rightBorder: 40.92
   _relativeSpeedRate: 0.3
 --- !u!1 &7039704320274304650
 GameObject:
@@ -666,7 +666,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _leftBorder: -20.46
-  _rightBorder: 20.46
+  _rightBorder: 40.92
   _relativeSpeedRate: 0.3
 --- !u!1 &7278140041208111604
 GameObject:
@@ -694,7 +694,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7278140041208111604}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 35.62, y: -2.5, z: 0}
+  m_LocalPosition: {x: 35.61, y: -2.5, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 7374595844525518469}
@@ -764,7 +764,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _leftBorder: -35.61
-  _rightBorder: 35.62
+  _rightBorder: 53.43
   _relativeSpeedRate: 1
 --- !u!1 &8140164565094641497
 GameObject:
@@ -792,7 +792,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8140164565094641497}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -35.62, y: -2.5, z: 0}
+  m_LocalPosition: {x: -35.6, y: -2.5, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 7374595844525518469}
@@ -862,7 +862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _leftBorder: -35.61
-  _rightBorder: 35.62
+  _rightBorder: 53.43
   _relativeSpeedRate: 1
 --- !u!1 &8833280361136734726
 GameObject:
