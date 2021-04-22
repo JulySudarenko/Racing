@@ -18,7 +18,7 @@ namespace Game.TapeBackground
 
         private void OnDestroy()
         {
-            _diff?.SubscribeOnChange(Move);
+            _diff?.UnSubscriptionOnChange(Move);
         }
 
         private void Move(float value)

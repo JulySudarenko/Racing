@@ -43,10 +43,23 @@
             <e p="MainMenuView.cs" t="Include" />
           </e>
           <e p="ProfilePlayer" t="Include">
+            <e p="Ads" t="Include">
+              <e p="IAdsShower.cs" t="Include" />
+              <e p="UnityAdsTools.cs" t="Include" />
+            </e>
+            <e p="Analytic" t="Include">
+              <e p="IAnalyticTools.cs" t="Include" />
+              <e p="UnityAnalyticTools.cs" t="Include" />
+            </e>
             <e p="Car.cs" t="Include" />
             <e p="CurrentGameState.cs" t="Include" />
             <e p="GameState.cs" t="Include" />
             <e p="ProfilePlayer.cs" t="Include" />
+            <e p="Shop" t="Include">
+              <e p="IShop.cs" t="Include" />
+              <e p="ShopProduct.cs" t="Include" />
+              <e p="ShopTools.cs" t="Include" />
+            </e>
           </e>
           <e p="Root.cs" t="Include" />
           <e p="Tools" t="Include">
