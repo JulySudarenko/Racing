@@ -31,6 +31,7 @@ namespace Ui
         private void StartGame()
         {
             _profilePlayer.CurrentState.Value = GameState.Game;
+            _profilePlayer.AnalyticTools.SendMessage("start game");
         }
     }
 }

@@ -48,6 +48,8 @@ namespace Game.InputLogic
         private void MoveToRight()
         {
             OnRightMove(_speed * Time.deltaTime);
+            // Debug.Log($"speed = {_speed}");
+            // Debug.Log($"Swipe speed = {_speed * Time.deltaTime}");
         }
 
         private void MoveToLeft()

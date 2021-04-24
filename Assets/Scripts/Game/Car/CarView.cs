@@ -32,9 +32,8 @@ namespace Game
         private void Move(float value)
         {
             _speed = _coefficient * value;
-            Debug.Log(value);
-            Debug.Log(_speed);
-            Debug.Log("*****");
+            // Debug.Log($"Car value = {value}");
+            // Debug.Log($"Car speed {_speed}");
 
             _backWheelMotor.motorSpeed = _speed;
             _forwardWheelMotor.motorSpeed = _speed;
@@ -48,7 +47,7 @@ namespace Game
         {
             var emissionModule = _smoke.emission;
             var mainModule = _smoke.main;
-            Debug.Log(_hightSpeedParam * value);
+            //Debug.Log(_hightSpeedParam * value);
             if (Mathf.Abs(_speed) >= _hightSpeedParam * value)
             {
                 emissionModule.rateOverTime = 50;

@@ -13,9 +13,6 @@ namespace Game.TapeBackground
 
         public void Move(float value)
         {
-            Debug.Log("-----");
-            Debug.Log(value);
-            Debug.Log("-----");
             transform.position += Vector3.right * (value * _relativeSpeedRate);
             _position = transform.position;
             if (_position.x <= _leftBorder)

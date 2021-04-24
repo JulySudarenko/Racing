@@ -10,6 +10,51 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="BaseController.cs" t="Include" />
+          <e p="ContentDataSource" t="Include">
+            <e p="AbilityItems" t="Include">
+              <e p="AbilityItemConfig.cs" t="Include" />
+              <e p="AbilityItemConfigDataSource.cs" t="Include" />
+            </e>
+            <e p="ContentDataSourceLoader.cs" t="Include" />
+            <e p="Items" t="Include">
+              <e p="Interfaces.cs" t="Include" />
+              <e p="Item.cs" t="Include" />
+              <e p="ItemConfig.cs" t="Include" />
+              <e p="ItemsRepository.cs" t="Include" />
+            </e>
+            <e p="UpgradeItems" t="Include">
+              <e p="UpgradeItemConfig.cs" t="Include" />
+              <e p="UpgradeItemConfigDataSource.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Features" t="Include">
+            <e p="AbilitiesFeature" t="Include">
+              <e p="Abilities" t="Include">
+                <e p="GunAbility.cs" t="Include" />
+                <e p="StubAbility.cs" t="Include" />
+              </e>
+              <e p="AbilitiesController.cs" t="Include" />
+              <e p="AbilityCollectionView.cs" t="Include" />
+              <e p="AbilityRepository.cs" t="Include" />
+              <e p="Interfaces.cs" t="Include" />
+            </e>
+            <e p="Interfaces.cs" t="Include" />
+            <e p="InventoryFeature" t="Include">
+              <e p="Interfaces.cs" t="Include" />
+              <e p="InventoryController.cs" t="Include" />
+              <e p="InventoryModel.cs" t="Include" />
+              <e p="InventoryView.cs" t="Include" />
+            </e>
+            <e p="ShedFeature" t="Include">
+              <e p="Interfaces.cs" t="Include" />
+              <e p="ShedController.cs" t="Include" />
+              <e p="UpgradeHandlers" t="Include">
+                <e p="SpeedUpgradeHandler.cs" t="Include" />
+                <e p="StubUpgradeHandler.cs" t="Include" />
+                <e p="UpgradeHandlersRepository.cs" t="Include" />
+              </e>
+            </e>
+          </e>
           <e p="Game" t="Include">
             <e p="Car" t="Include">
               <e p="CarController.cs" t="Include" />
@@ -73,6 +118,9 @@
               <e p="IReadOnlySubscriptionProperty.cs" t="Include" />
               <e p="SubscriptionProperty.cs" t="Include" />
             </e>
+          </e>
+          <e p="UI" t="Include">
+            <e p="Interfaces.cs" t="Include" />
           </e>
         </e>
         <e p="Standard Assets" t="Include">
