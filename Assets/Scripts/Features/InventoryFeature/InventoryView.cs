@@ -2,12 +2,17 @@ using System;
 using System.Collections.Generic;
 using Company.Project.Features.Items;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Company.Project.Features.Inventory
 {
     public class InventoryView : MonoBehaviour, IInventoryView
     {
         #region Fields
+
+        [SerializeField] private Button _buttonOil;
+        [SerializeField] private Button _buttonBomb;
+        [SerializeField] private Button _buttonSpeed;
         
         private List<IItem> _itemInfoCollection;
         

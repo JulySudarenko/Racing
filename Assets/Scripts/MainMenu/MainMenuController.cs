@@ -7,25 +7,36 @@ namespace Ui
 {
     internal sealed class MainMenuController : BaseController
     {
-        private readonly ResourcePath _viewPath = new ResourcePath {PathResource = "Prefabs/mainMenu"};
+        #region Fields
+
         private readonly ProfilePlayer _profilePlayer;
         private readonly MainMenuView _view;
-        
+
+        #endregion
+
+        #region Life cycle
+
         public MainMenuController(Transform placeForUi, ProfilePlayer profilePlayer)
         {
             _profilePlayer = profilePlayer;
-            _view = LoadView(placeForUi);
+            _view = ResourceLoader.LoadAndInstantiateObject<MainMenuView>(
+                new ResourcePath {PathResource = "Prefabs/mainMenu"}, placeForUi, false);
+            AddGameObjects(_view.gameObject);
             _view.Init(StartGame);
-            CursorTrailController cursorTrailController = new CursorTrailController();
-            AddController(cursorTrailController);
-            
+            _view.InitShed(ShedEnter);
+
+            var cursorTrailController = ConfigureCursorTrail();
         }
 
-        private MainMenuView LoadView(Transform placeForUi)
+        #endregion
+
+        #region Methods
+
+        private BaseController ConfigureCursorTrail()
         {
-            GameObject objectView = Object.Instantiate(ResourceLoader.LoadPrefab(_viewPath), placeForUi, false);
-            AddGameObjects(objectView);
-            return objectView.GetComponent<MainMenuView>();
+            var cursorTrailController = new CursorTrailController();
+            AddController(cursorTrailController);
+            return cursorTrailController;
         }
 
         private void StartGame()
@@ -33,6 +44,13 @@ namespace Ui
             _profilePlayer.CurrentState.Value = GameState.Game;
             _profilePlayer.AnalyticTools.SendMessage("start game");
         }
+
+        private void ShedEnter()
+        {
+            _profilePlayer.CurrentState.Value = GameState.Shed;
+            _profilePlayer.AnalyticTools.SendMessage("enter shed");
+        }
+
+        #endregion
     }
 }
-
