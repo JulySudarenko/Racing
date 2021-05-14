@@ -7,9 +7,9 @@ namespace Game.InputLogic
 {
     internal sealed class InputSwipeView : BaseInputView, IBeginDragHandler, IEndDragHandler, IDragHandler
     {
-        private float _threshold = 40f;
+        private readonly float _threshold = 40f;
+        private readonly float _acceleration = 3.0f;
         private float _diff;
-        private float _acceleration = 3.0f;
         private Vector2 _startPosition;
 
         public void OnBeginDrag(PointerEventData eventData)
@@ -31,7 +31,7 @@ namespace Game.InputLogic
 
         public void OnEndDrag(PointerEventData eventData)
         {
-            float _diff = eventData.position.x - _startPosition.x;
+            _diff = eventData.position.x - _startPosition.x;
             if (Mathf.Abs(_diff) >= _threshold)
             {
                 if (_diff > 0)

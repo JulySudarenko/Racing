@@ -9,16 +9,16 @@ namespace Game
         [SerializeField] private WheelJoint2D _forwardWheel;
         [SerializeField] private ParticleSystem _smoke;
 
-        private IReadOnlySubscriptionProperty<float> _diff;
-        private JointMotor2D _backWheelMotor;
-        private JointMotor2D _forwardWheelMotor;
         private readonly float _coefficient = 800.0f;
         private readonly float _hightSpeedParam = 120.0f;
         private readonly float _smokeLifeTimeStart = 0.3f;
         private readonly float _smokeLifeTimeDelta = 0.2f;
         private readonly float _smokeEmissionStart = 30.0f;
         private readonly float _smokeEmissionDelta = 20.0f;
-        
+
+        private IReadOnlySubscriptionProperty<float> _diff;
+        private JointMotor2D _backWheelMotor;
+        private JointMotor2D _forwardWheelMotor;
         private float _speed = 0.0f;
 
         public void Init(IReadOnlySubscriptionProperty<float> diff)

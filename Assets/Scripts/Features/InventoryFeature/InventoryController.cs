@@ -9,33 +9,31 @@ namespace Company.Project.Features.Inventory
     public class InventoryController : BaseController, IInventoryController
     {
         #region Fields
-        
+
         private readonly IRepository<int, IItem> _itemsRepository;
         private readonly IInventoryModel _inventoryModel;
         private readonly IInventoryView _inventoryView;
+
         private Action _hideAction;
-        
+
         #endregion
 
         #region Life cycle
-        
+
         public InventoryController(
             [NotNull] IRepository<int, IItem> itemsRepository,
             [NotNull] IInventoryModel inventoryModel,
             [NotNull] IInventoryView inventoryView)
         {
-            _itemsRepository 
-                = itemsRepository ?? throw new ArgumentNullException(nameof(itemsRepository));
-            
-            _inventoryModel 
-                = inventoryModel ?? throw new ArgumentNullException(nameof(inventoryModel));
+            _itemsRepository = itemsRepository ?? throw new ArgumentNullException(nameof(itemsRepository));
 
-            _inventoryView
-                = inventoryView ?? throw new ArgumentNullException(nameof(inventoryView));
-            
+            _inventoryModel = inventoryModel ?? throw new ArgumentNullException(nameof(inventoryModel));
+
+            _inventoryView = inventoryView ?? throw new ArgumentNullException(nameof(inventoryView));
+
             SetupView(_inventoryView);
         }
-        
+
         protected override void OnDispose()
         {
             CleanupView();
@@ -65,33 +63,33 @@ namespace Company.Project.Features.Inventory
         }
 
         #endregion
-        
+
         #region Methods
-        
+
         private void SetupView(IInventoryView inventoryView)
         {
-            // здесь могут быть дополнительные настройки
             inventoryView.Selected += OnItemSelected;
             inventoryView.Deselected += OnItemDeselected;
+            inventoryView.OnShedExit += HideInventory;
         }
-        
+
         private void CleanupView()
         {
-            // здесь могут быть дополнительные зачистки
             _inventoryView.Selected -= OnItemSelected;
             _inventoryView.Deselected -= OnItemDeselected;
+            _inventoryView.OnShedExit -= HideInventory;
         }
 
         private void OnItemSelected(object sender, IItem item)
         {
             _inventoryModel.EquipItem(item);
         }
-        
+
         private void OnItemDeselected(object sender, IItem item)
         {
             _inventoryModel.UnequipItem(item);
         }
-        
+
         #endregion
     }
 }

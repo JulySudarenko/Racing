@@ -1,4 +1,5 @@
 using Company.Project.Features.Items;
+using UnityEngine.UI;
 
 namespace Company.Project.Content
 {
@@ -6,5 +7,6 @@ namespace Company.Project.Content
     {
         public int Id { get; set; }
         public ItemInfo Info { get; set; }
+        public Image Icon { get; set; }
     }
 }

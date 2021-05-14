@@ -1,11 +1,6 @@
-﻿using System.Linq;
-using Company.Project.Content;
-using Company.Project.ContentData;
-using Company.Project.Features.Inventory;
-using Company.Project.Features.Shed;
+﻿using Company.Project.Features.Shed;
 using Game;
 using Profile;
-using Tools;
 using Ui;
 using UnityEngine;
 
@@ -39,7 +34,8 @@ internal sealed class MainController : BaseController
                 _mainMenuController?.Dispose();
                 break;
             case GameState.Shed:
-                var shedController = ConfigureShedController(_placeForUi, _profilePlayer);
+                _shedController = new ShedController(_placeForUi, _profilePlayer);
+                _shedController.Enter();
                 _mainMenuController?.Dispose();
                 break;
             default:
@@ -48,31 +44,6 @@ internal sealed class MainController : BaseController
                 _shedController?.Dispose();
                 break;
         }
-    }
-
-    private BaseController ConfigureShedController(Transform placeForUi, ProfilePlayer profilePlayer)
-    {
-        var upgradeItemsConfigCollection
-            = ContentDataSourceLoader.LoadUpgradeItemConfigs(new ResourcePath
-                {PathResource = "DataSource/Upgrade/UpgradeItemConfigDataSource"});
-        var upgradeItemsRepository
-            = new UpgradeHandlersRepository(upgradeItemsConfigCollection);
-
-        var itemsRepository = new ItemsRepository(
-            upgradeItemsConfigCollection.Select(value => value.itemConfig).ToList());
-        var inventoryModel = new InventoryModel();
-        var inventoryViewPath = new ResourcePath {PathResource = $"Prefabs/{nameof(InventoryView)}"};
-        var inventoryView = ResourceLoader.LoadAndInstantiateObject<InventoryView>(
-            inventoryViewPath, placeForUi, false);
-        AddGameObjects(inventoryView.gameObject);
-        var inventoryController = new InventoryController(itemsRepository, inventoryModel, inventoryView);
-        AddController(inventoryController);
-
-        var shedController =
-            new ShedController(upgradeItemsRepository, inventoryController, profilePlayer.CurrentCar);
-        AddController(shedController);
-
-        return shedController;
     }
 
     protected override void OnDispose()

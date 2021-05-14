@@ -6,13 +6,11 @@ namespace Game.TapeBackground
     {
         [SerializeField] private float _leftBorder;
         [SerializeField] private float _rightBorder;
-
         [SerializeField] private float _relativeSpeedRate;
 
         private Vector3 _position;
         private Vector3 _previusPosition;
-
-
+        
         public void Move(float value)
         {
             transform.position += Vector3.right * (value * _relativeSpeedRate);

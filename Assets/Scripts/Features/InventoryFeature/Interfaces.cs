@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Company.Project.Features.Items;
 using Company.Project.UI;
+using UnityEngine.Events;
 
 namespace Company.Project.Features.Inventory
 {
@@ -23,6 +24,7 @@ namespace Company.Project.Features.Inventory
     {
         event EventHandler<IItem> Selected;
         event EventHandler<IItem> Deselected;
+        event Action OnShedExit;
         void Display(List<IItem> itemInfoCollection);
     }
 }

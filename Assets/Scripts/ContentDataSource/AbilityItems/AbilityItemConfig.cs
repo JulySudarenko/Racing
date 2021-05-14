@@ -17,5 +17,6 @@ namespace Company.Project.Content
     {
         None,
         Gun,
+        Oil
     }
 }

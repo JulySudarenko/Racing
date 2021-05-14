@@ -8,7 +8,8 @@ namespace Ui
     {
         [SerializeField] private Button _buttonStart;
         [SerializeField] private Button _buttonShed;
-            
+
+        
         public void Init(UnityAction startGame)
         {
             _buttonStart.onClick.AddListener(startGame);

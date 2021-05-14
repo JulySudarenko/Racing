@@ -1,6 +1,7 @@
 using JetBrains.Annotations;
 using Company.Project.Content;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
 namespace Company.Project.Features.Abilities
 {
@@ -28,7 +29,7 @@ namespace Company.Project.Features.Abilities
             var projectile = Object.Instantiate(_config.view).GetComponent<Rigidbody2D>();
             projectile.AddForce(activator.GetViewObject().transform.right * _config.value, ForceMode2D.Force);
         }
-
+        
         #endregion
     }
 }

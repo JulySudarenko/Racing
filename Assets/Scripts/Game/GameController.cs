@@ -17,7 +17,6 @@ namespace Game
         {
             SubscriptionProperty<float> leftMoveDiff = new SubscriptionProperty<float>();
             SubscriptionProperty<float> rightMoveDiff = new SubscriptionProperty<float>();
-            SubscriptionProperty<bool> isStand = new SubscriptionProperty<bool>();
             
             TapeBackgroundController tapeBackgroundController =
                 new TapeBackgroundController(leftMoveDiff, rightMoveDiff);
@@ -29,6 +28,7 @@ namespace Game
             AddController(carController);
 
             var abilityController = ConfigureAbilityController(placeForUi, carController);
+            abilityController.ShowAbilities();
         }
 
         #endregion

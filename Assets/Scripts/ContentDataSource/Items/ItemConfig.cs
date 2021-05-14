@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Company.Project.Content
 {
@@ -7,5 +8,6 @@ namespace Company.Project.Content
     {
         public int id;
         public string title;
+        public Image icon;
     }
 }

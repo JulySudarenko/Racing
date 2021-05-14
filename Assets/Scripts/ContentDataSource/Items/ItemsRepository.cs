@@ -11,12 +11,11 @@ namespace Company.Project.Content
 
         #region Life cycle
 
-        public ItemsRepository(
-            List<ItemConfig> itemConfigs)
+        public ItemsRepository(List<ItemConfig> itemConfigs)
         {
             PopulateItems(ref _itemsMapById, itemConfigs);
         }
-        
+
         protected override void OnDispose()
         {
             _itemsMapById.Clear();
@@ -24,12 +23,11 @@ namespace Company.Project.Content
         }
 
         #endregion
-        
-        
+
+
         #region Methods
 
-        private void PopulateItems(
-            ref Dictionary<int, IItem> upgradeHandlersMapByType,
+        private void PopulateItems(ref Dictionary<int, IItem> upgradeHandlersMapByType,
             List<ItemConfig> configs)
         {
             foreach (var config in configs)
@@ -44,10 +42,11 @@ namespace Company.Project.Content
             return new Item
             {
                 Id = config.id,
-                Info = new ItemInfo { Title = config.title}
+                Info = new ItemInfo {Title = config.title},
+                Icon = config.icon
             };
         }
-        
+
         #endregion
     }
 }

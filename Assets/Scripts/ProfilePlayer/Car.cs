@@ -2,23 +2,22 @@
 
 namespace Profile
 {
-    internal sealed class Car : IUpgradable
+    public sealed class Car : IUpgradable
     {
         #region Properties
-      
+
         public float Speed { get; set; }
-   
-        #endregion
-        
-        #region Fields
-      
-        private readonly float _defaultSpeed;
-   
+
         #endregion
 
-        
+        #region Fields
+
+        private readonly float _defaultSpeed;
+
+        #endregion
+
         #region Life cycle
-    
+
         public Car(float speed)
         {
             _defaultSpeed = speed;
@@ -26,7 +25,6 @@ namespace Profile
         }
 
         #endregion
-        
 
         #region IUpgradable
 
@@ -38,4 +36,3 @@ namespace Profile
         #endregion
     }
 }
-
