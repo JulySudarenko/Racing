@@ -25,27 +25,49 @@ namespace Company.Project.Features.Inventory
 
         #endregion
         
-        private void ButtonOn()
+        private void SpeedOn()
         {
-            string item = "none";
             foreach (var item1 in _itemInfoCollection.Where(item => item.Id == 1))
             {
-                item = item1.Info.Title;
-                Debug.Log(_itemInfoCollection.Count);
                 OnSelected(item1);
             }
-            Debug.Log($"Turn on {item}");
         }
-        private void ButtonOff()
+        private void SpeedOff()
         {
-            string item = "none";
             foreach (var item1 in _itemInfoCollection.Where(item => item.Id == 1))
             {
-                item = item1.Info.Title;
-                Debug.Log(_itemInfoCollection.Count);
                 OnDeselected(item1);
             }
-            Debug.Log($"Turn off {item}");
+        }
+        private void BombOn()
+        {
+            foreach (var item1 in _itemInfoCollection.Where(item => item.Id == 2))
+            {
+                OnSelected(item1);
+            }
+        }
+        private void BombOff()
+        {
+            foreach (var item1 in _itemInfoCollection.Where(item => item.Id == 2))
+            {
+                OnDeselected(item1);
+            }
+        }
+       
+        private void OilOn()
+        {
+            foreach (var item1 in _itemInfoCollection.Where(item => item.Id == 3))
+            {
+                OnSelected(item1);
+            }
+        }
+        
+        private void OilOff()
+        {
+            foreach (var item1 in _itemInfoCollection.Where(item => item.Id == 3))
+            {
+                OnDeselected(item1);
+            }
         }
 
         private void ExitShed()
@@ -72,8 +94,12 @@ namespace Company.Project.Features.Inventory
         private void AddButtonsListeners()
         {
             _buttonMainMenu.onClick.AddListener(ExitShed);
-            _buttonSpeedAccelerationAdd.onClick.AddListener(ButtonOn);
-            _buttonSpeedAccelerationRemove.onClick.AddListener(ButtonOff);
+            _buttonSpeedAccelerationAdd.onClick.AddListener(SpeedOn);
+            _buttonSpeedAccelerationRemove.onClick.AddListener(SpeedOff);
+            _buttonCannonAdd.onClick.AddListener(BombOn);
+            _buttonCannonRemove.onClick.AddListener(BombOff);
+            _buttonOilAdd.onClick.AddListener(OilOn);
+            _buttonOilRemove.onClick.AddListener(OilOff);
         }
         
         private void RemoveButtonsListeners()
@@ -81,6 +107,10 @@ namespace Company.Project.Features.Inventory
             _buttonMainMenu.onClick.RemoveAllListeners();
             _buttonSpeedAccelerationAdd.onClick.RemoveAllListeners();
             _buttonSpeedAccelerationRemove.onClick.RemoveAllListeners();
+            _buttonCannonAdd.onClick.RemoveAllListeners();
+            _buttonCannonRemove.onClick.RemoveAllListeners();
+            _buttonOilAdd.onClick.RemoveAllListeners();
+            _buttonOilRemove.onClick.RemoveAllListeners();
         }
        
         public void Display(List<IItem> itemInfoCollection)

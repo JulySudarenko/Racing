@@ -1650,10 +1650,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1a94049cb8a49bc915c87ea2ed15c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _buttonOilAdd: {fileID: 0}
-  _buttonOilRemove: {fileID: 0}
-  _buttonCannonAdd: {fileID: 0}
-  _buttonCannonRemove: {fileID: 0}
+  _buttonOilAdd: {fileID: 6501303432853591462}
+  _buttonOilRemove: {fileID: 4275130063972292096}
+  _buttonCannonAdd: {fileID: 8102547086609857825}
+  _buttonCannonRemove: {fileID: 5737488988435676385}
   _buttonSpeedAccelerationAdd: {fileID: 5079023019796362175}
   _buttonSpeedAccelerationRemove: {fileID: 8696273090895357725}
   _buttonMainMenu: {fileID: 5000231092328780253}

@@ -33,4 +33,5 @@ namespace Company.Project.Features.Inventory
         
         #endregion
     }
+
 }

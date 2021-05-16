@@ -16,5 +16,7 @@ namespace Company.Project.Content
     {
         None,
         Speed,
+        Cannon,
+        TankOil
     }
 }

@@ -4,8 +4,7 @@ using UnityEngine;
 
 internal sealed class Root : MonoBehaviour
 {
-    [SerializeField] 
-    private Transform _placeForUi;
+    [SerializeField] private Transform _placeForUi;
     [SerializeField] private float _speedCar = 15.0f;
 
     private MainController _mainController;

@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ebc6ead964c842c280ed9de70b80b53d, type: 3}
-  m_Name: Upgrade item
+  m_Name: BombUpgradeItem
   m_EditorClassIdentifier: 
-  itemConfig: {fileID: 11400000, guid: b56aed92fb9fb1444b5ccb6b39a0f36c, type: 2}
-  type: 1
-  value: 20
+  itemConfig: {fileID: 11400000, guid: 4abac9564be72d9469506e941314c198, type: 2}
+  type: 2
+  value: 1

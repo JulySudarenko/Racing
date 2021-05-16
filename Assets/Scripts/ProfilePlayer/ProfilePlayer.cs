@@ -1,4 +1,6 @@
-﻿using Profile.Analytic;
+﻿using Company.Project.Features.Inventory;
+using Company.Project.Features.Items;
+using Profile.Analytic;
 using Tools;
 
 namespace Profile
@@ -7,6 +9,8 @@ namespace Profile
     {
         public SubscriptionProperty<GameState> CurrentState { get; }
         public Car CurrentCar { get; }
+        
+        public InventoryModel InventoryModel { get; private set; }
         public IAnalyticTools AnalyticTools { get; }
         
         public ProfilePlayer(float speedCar, IAnalyticTools analyticTools)
@@ -14,6 +18,12 @@ namespace Profile
             AnalyticTools = analyticTools;
             CurrentState = new SubscriptionProperty<GameState>();
             CurrentCar = new Car(speedCar);
+            InventoryModel = new InventoryModel();
+        }
+
+        public void AddEquipItem(InventoryModel inventoryModel)
+        {
+            InventoryModel = inventoryModel;
         }
     }
 }

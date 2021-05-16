@@ -17,6 +17,7 @@ namespace Company.Project.Features.Shed
         private readonly IUpgradable _upgradable;
         private readonly IRepository<int, IUpgradeHandler> _upgradeHandlersRepository;
         private readonly IInventoryController _inventoryController;
+        private InventoryModel _inventoryModel;
         private ProfilePlayer _profilePlayer;
         
         private List<UpgradeItemConfig> _upgradeItemsConfigCollection;
@@ -61,7 +62,7 @@ namespace Company.Project.Features.Shed
         {
             var itemsRepository = new ItemsRepository(
                 _upgradeItemsConfigCollection.Select(value => value.itemConfig).ToList());
-            var inventoryModel = new InventoryModel();
+            _inventoryModel = new InventoryModel();
             
             var inventoryViewPath = new ResourcePath {PathResource = $"Prefabs/{nameof(InventoryView)}"};
             var inventoryView = ResourceLoader.LoadAndInstantiateObject<InventoryView>(
@@ -69,7 +70,7 @@ namespace Company.Project.Features.Shed
             
             AddGameObjects(inventoryView.gameObject);
             
-            var inventoryController = new InventoryController(itemsRepository, inventoryModel, inventoryView);
+            var inventoryController = new InventoryController(itemsRepository, _inventoryModel, inventoryView);
             AddController(inventoryController);
 
             return inventoryController;
@@ -88,6 +89,7 @@ namespace Company.Project.Features.Shed
         {
             UpgradeCarWithEquippedItems(
                 _upgradable, _inventoryController.GetEquippedItems(), _upgradeHandlersRepository.Collection);
+            _profilePlayer.AddEquipItem(_inventoryModel);
             Debug.Log(_profilePlayer.CurrentCar.Speed);
             _profilePlayer.CurrentState.Value = GameState.Start;
         }

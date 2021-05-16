@@ -10,6 +10,7 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="BaseController.cs" t="Include" />
+          <e p="ClickChecker.cs" t="Include" />
           <e p="ContentDataSource" t="Include">
             <e p="AbilityItems" t="Include">
               <e p="AbilityItemConfig.cs" t="Include" />
@@ -32,6 +33,7 @@
               <e p="Abilities" t="Include">
                 <e p="GunAbility.cs" t="Include" />
                 <e p="StubAbility.cs" t="Include" />
+                <e p="TankOilAbility.cs" t="Include" />
               </e>
               <e p="AbilitiesController.cs" t="Include" />
               <e p="AbilityCollectionView.cs" t="Include" />

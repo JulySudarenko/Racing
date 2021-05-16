@@ -14,7 +14,8 @@ namespace Company.Project.Features.Abilities
         [SerializeField] private Button _buttonBomb;
 
         private IReadOnlyList<IItem> _abilityItems;
-
+        private IReadOnlyDictionary<int, IAbility> _abilityDictionary;
+        
         #endregion
 
         #region Methods
@@ -37,12 +38,14 @@ namespace Company.Project.Features.Abilities
 
         public void Show()
         {
-            _buttonBomb.onClick.AddListener(OnOilClick);
+            _buttonBomb.onClick.AddListener(OnBombClick);
+            _buttonOil.onClick.AddListener(OnOilClick);
             // красиво показать какой-то объект
         }
 
         private void OnBombClick()
         {
+            Debug.Log("Bomb");
             foreach (var item in _abilityItems)
             {
                 if (item.Id == 2) 
@@ -52,9 +55,10 @@ namespace Company.Project.Features.Abilities
         
         private void OnOilClick()
         {
+            Debug.Log("Oil");
             foreach (var item in _abilityItems)
             {
-                if (item.Id == 2) 
+                if (item.Id == 3) 
                     OnUseRequested(item);
             }
         }

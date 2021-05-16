@@ -48,6 +48,7 @@ namespace Game.InputLogic
 
         public void OnDrag(PointerEventData eventData)
         {
+
         }
 
         private void MoveToRight()

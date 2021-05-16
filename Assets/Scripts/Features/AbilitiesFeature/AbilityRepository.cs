@@ -18,7 +18,7 @@ namespace Company.Project.Features.Abilities
         {
             PopulateItems(ref _abilityMapById, itemConfigs);
         }
-
+        
         #endregion
         
         #region Methods
@@ -40,6 +40,8 @@ namespace Company.Project.Features.Abilities
             {
                 case AbilityType.Gun:
                     return new GunAbility(config);
+                case AbilityType.Oil:
+                    return new TankOilAbility(config);
                 default:
                     return StubAbility.Default;
             }
