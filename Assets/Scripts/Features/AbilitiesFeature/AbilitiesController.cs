@@ -51,13 +51,11 @@ namespace Company.Project.Features.Abilities
 
         private void SetupView(IAbilityCollectionView view)
         {
-            // здесь могут быть дополнительные настройки
             view.UseRequested += OnAbilityUseRequested;
         }
         
         private void CleanupView(IAbilityCollectionView view)
         {
-            // здесь могут быть дополнительные зачистки
             view.UseRequested -= OnAbilityUseRequested;
         }
 

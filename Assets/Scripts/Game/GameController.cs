@@ -1,7 +1,7 @@
 ﻿using Company.Project.ContentData;
 using Company.Project.Features.Abilities;
-using Company.Project.Features.Inventory;
 using Game.InputLogic;
+using Game.Observer;
 using Game.TapeBackground;
 using Profile;
 using Tools;
@@ -26,7 +26,10 @@ namespace Game
             AddController(inputGameController);
             CarController carController = new CarController(leftMoveDiff, rightMoveDiff);
             AddController(carController);
-
+            
+            AIController aiController = new AIController(placeForUi);
+            AddController(aiController);
+            
             var abilityController = ConfigureAbilityController(placeForUi, carController, profilePlayer);
             abilityController.ShowAbilities();
         }
@@ -51,8 +54,6 @@ namespace Game
                     false);
             AddGameObjects(abilityCollectionView.gameObject);
 
-            // загрузить в модель экипированные предметы можно любым способом
-            //var inventoryModel = new InventoryModel();
             var abilitiesController = new AbilitiesController(abilityRepository, profilePlayer.InventoryModel, abilityCollectionView,
                 abilityActivator);
             AddController(abilitiesController);
