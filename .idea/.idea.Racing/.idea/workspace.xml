@@ -20,12 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d736d91-0361-4f9b-a9ec-16f4bbc601ec" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Racing/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Racing/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Racing/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Racing/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Racing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Racing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Features/ShedFeature/Interfaces.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Features/ShedFeature/Interfaces.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Observer/AIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Observer/AIController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Observer/DataPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Observer/DataPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Observer/ObserverView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Observer/ObserverView.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,10 +100,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Features/AbilitiesFeature/AbilitiesController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Observer/DataPlayer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Observer/AIController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Observer/ObserverView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Observer/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Features/ShedFeature/Interfaces.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Observer/AIController.cs" />
       </list>
     </option>
   </component>

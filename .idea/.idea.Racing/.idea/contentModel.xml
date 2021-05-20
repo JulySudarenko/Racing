@@ -113,6 +113,15 @@
               <e p="ShopTools.cs" t="Include" />
             </e>
           </e>
+          <e p="Rewards" t="Include">
+            <e p="ContainerSlotRewardView.cs" t="Include" />
+            <e p="CurrencyView.cs" t="Include" />
+            <e p="DailyRewardController.cs" t="Include" />
+            <e p="DailyRewardView.cs" t="Include" />
+            <e p="InstallView.cs" t="Include" />
+            <e p="Reward.cs" t="Include" />
+            <e p="RewardType.cs" t="Include" />
+          </e>
           <e p="Root.cs" t="Include" />
           <e p="Tools" t="Include">
             <e p="ResourceLoader.cs" t="Include" />
