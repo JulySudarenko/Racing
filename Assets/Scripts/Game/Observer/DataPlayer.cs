@@ -73,10 +73,23 @@ namespace Game.Observer
                 }
             }
         }
+        
+        public int CrimeRate
+        {
+            get => _countForce;
+            set
+            {
+                if (_countForce != value)
+                {
+                    _countForce = value;
+                    Notify((LightingExplorerTableColumn.DataType) DataType.Force);
+                }
+            }
+        }
     }
 
 
-    class Money : DataPlayer
+    internal class Money : DataPlayer
     {
         public Money(string titleData)
             : base(titleData)
@@ -84,7 +97,7 @@ namespace Game.Observer
         }
     }
 
-    class Health : DataPlayer
+    internal class Health : DataPlayer
     {
         public Health(string titleData)
             : base(titleData)
@@ -92,9 +105,17 @@ namespace Game.Observer
         }
     }
 
-    class Force : DataPlayer
+    internal class Force : DataPlayer
     {
         public Force(string titleData)
+            : base(titleData)
+        {
+        }
+    }
+    
+    internal class CrimeRate : DataPlayer
+    {
+        public CrimeRate(string titleData)
             : base(titleData)
         {
         }

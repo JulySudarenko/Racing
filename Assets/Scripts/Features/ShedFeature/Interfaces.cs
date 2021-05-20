@@ -16,6 +16,6 @@ namespace Company.Project.Features.Shed
         void Restore();
         float Speed { get; set; }
         float Force { get; set; }
-        public int CrimeRate { get; set; }
+        int CrimeRate { get; set; }
     }
 }

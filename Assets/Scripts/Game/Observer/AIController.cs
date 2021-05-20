@@ -7,7 +7,8 @@ namespace Game.Observer
     {
         Money,
         Health,
-        Force
+        Force,
+        CrimeRate
     }
 
     public class AIController : BaseController

@@ -11,7 +11,7 @@ namespace Game.Observer
         [SerializeField] private TMP_Text _countPowerText;
         [SerializeField] private TMP_Text _countCrimeRateText;
         [SerializeField] private TMP_Text _countPowerEnemyText;
-        
+
         [SerializeField] private Button _addCoinsButton;
         [SerializeField] private Button _minusCoinsButton;
         [SerializeField] private Button _addHealthButton;
@@ -26,10 +26,12 @@ namespace Game.Observer
         private int _allCountMoneyPlayer;
         private int _allCountHealthPlayer;
         private int _allCountForcePlayer;
+        private int _allCountCrimeRatePlayer;
 
         private Money _money;
         private Health _heath;
         private Force _force;
+        private CrimeRate _crimeRate;
 
         private Enemy _enemy;
 
@@ -46,6 +48,9 @@ namespace Game.Observer
             _force = new Force(nameof(Force));
             _force.Attach(_enemy);
 
+            _crimeRate = new CrimeRate(nameof(CrimeRate));
+            _crimeRate.Attach(_enemy);
+
             //_addCoinsButton.onClick.AddListener(() => ChangeMoney(true));
             //_minusCoinsButton.onClick.AddListener(() => ChangeMoney(false));
 
@@ -55,7 +60,11 @@ namespace Game.Observer
             _addPowerButton.onClick.AddListener(() => ChangeForce(true));
             _minusPowerButton.onClick.AddListener(() => ChangeForce(false));
 
+            _addCrimeRateButton.onClick.AddListener(() => ChangeCrimeRate(true));
+            _minusCrimeRateButton.onClick.AddListener(() => ChangeCrimeRate(false));
+
             _fightButton.onClick.AddListener(Fight);
+            _skipButton.onClick.AddListener(Skip);
         }
 
         private void OnDestroy()
@@ -68,6 +77,9 @@ namespace Game.Observer
 
             _addPowerButton.onClick.RemoveAllListeners();
             _minusPowerButton.onClick.RemoveAllListeners();
+
+            _addCrimeRateButton.onClick.RemoveAllListeners();
+            _minusCrimeRateButton.onClick.RemoveAllListeners();
 
             _fightButton.onClick.RemoveAllListeners();
 
@@ -106,6 +118,33 @@ namespace Game.Observer
             ChangeDataWindow(_allCountForcePlayer, DataType.Force);
         }
 
+        private void ChangeCrimeRate(bool isAddCount)
+        {
+            if (isAddCount)
+            {
+                _allCountCrimeRatePlayer++;
+                if (_allCountCrimeRatePlayer > 5)
+                    _allCountCrimeRatePlayer = 5;
+            }
+            else
+            {
+                _allCountCrimeRatePlayer--;
+                if (_allCountCrimeRatePlayer < 0)
+                    _allCountCrimeRatePlayer = 0;
+            }
+
+
+            ChangeDataWindow(_allCountCrimeRatePlayer, DataType.CrimeRate);
+        }
+
+        private void Skip()
+        {
+            if (_allCountCrimeRatePlayer < 3)
+            {
+                Debug.Log("<color=#07FF00>Passed through</color>");
+            }
+        }
+
         private void Fight()
         {
             Debug.Log(_allCountForcePlayer >= _enemy.Force
@@ -130,6 +169,11 @@ namespace Game.Observer
                 case DataType.Force:
                     _countPowerText.text = $"Player Force {countChangeData.ToString()}";
                     _force.Force = countChangeData;
+                    break;
+
+                case DataType.CrimeRate:
+                    _countCrimeRateText.text = $"Player Crime rate {countChangeData.ToString()}";
+                    _crimeRate.CrimeRate = countChangeData;
                     break;
             }
 
