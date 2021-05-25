@@ -116,7 +116,6 @@ namespace Company.Project.Features.Inventory
         public void Display(List<IItem> itemInfoCollection)
         {
             _itemInfoCollection = itemInfoCollection;
-            Debug.Log(_itemInfoCollection.Count);
         }
 
         private void OnSelected(IItem e)

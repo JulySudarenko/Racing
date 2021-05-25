@@ -17,19 +17,19 @@ namespace Game
         {
             SubscriptionProperty<float> leftMoveDiff = new SubscriptionProperty<float>();
             SubscriptionProperty<float> rightMoveDiff = new SubscriptionProperty<float>();
-            
+
             TapeBackgroundController tapeBackgroundController =
                 new TapeBackgroundController(leftMoveDiff, rightMoveDiff);
             AddController(tapeBackgroundController);
-             InputGameController inputGameController =
-                 new InputGameController(leftMoveDiff, rightMoveDiff, profilePlayer.CurrentCar);
+            InputGameController inputGameController =
+                new InputGameController(leftMoveDiff, rightMoveDiff, profilePlayer.CurrentCar);
             AddController(inputGameController);
             CarController carController = new CarController(leftMoveDiff, rightMoveDiff);
             AddController(carController);
-            
+
             AIController aiController = new AIController(placeForUi);
             AddController(aiController);
-            
+
             var abilityController = ConfigureAbilityController(placeForUi, carController, profilePlayer);
             abilityController.ShowAbilities();
         }
@@ -54,8 +54,8 @@ namespace Game
                     false);
             AddGameObjects(abilityCollectionView.gameObject);
 
-            var abilitiesController = new AbilitiesController(abilityRepository, profilePlayer.InventoryModel, abilityCollectionView,
-                abilityActivator);
+            var abilitiesController = new AbilitiesController(abilityRepository, profilePlayer.InventoryModel,
+                abilityCollectionView, abilityActivator);
             AddController(abilitiesController);
 
             return abilitiesController;

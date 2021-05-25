@@ -8,6 +8,7 @@ namespace Ui
     {
         [SerializeField] private Button _buttonStart;
         [SerializeField] private Button _buttonShed;
+        [SerializeField] private Button _buttonReward;
 
         
         public void Init(UnityAction startGame)
@@ -20,10 +21,16 @@ namespace Ui
             _buttonShed.onClick.AddListener(shedEnter);
         }
 
+        public void InitReward(UnityAction rewardEnter)
+        {
+            _buttonReward.onClick.AddListener(rewardEnter);
+        }
+
         private void OnDestroy()
         {
             _buttonStart.onClick.RemoveAllListeners();
             _buttonShed.onClick.RemoveAllListeners();
+            _buttonReward.onClick.RemoveAllListeners();
         }
     }
 }

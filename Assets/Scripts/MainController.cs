@@ -1,6 +1,7 @@
 ﻿using Company.Project.Features.Shed;
 using Game;
 using Profile;
+using Rewards;
 using Ui;
 using UnityEngine;
 
@@ -9,6 +10,7 @@ internal sealed class MainController : BaseController
     private MainMenuController _mainMenuController;
     private GameController _gameController;
     private ShedController _shedController;
+    private RewardController _rewardController;
     private readonly Transform _placeForUi;
     private readonly ProfilePlayer _profilePlayer;
 
@@ -36,6 +38,10 @@ internal sealed class MainController : BaseController
             case GameState.Shed:
                 _shedController = new ShedController(_placeForUi, _profilePlayer);
                 _shedController.Enter();
+                _mainMenuController?.Dispose();
+                break;
+            case GameState.Reward:
+                _rewardController = new RewardController();
                 _mainMenuController?.Dispose();
                 break;
             default:

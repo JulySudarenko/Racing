@@ -24,6 +24,7 @@ namespace Ui
             AddGameObjects(_view.gameObject);
             _view.Init(StartGame);
             _view.InitShed(ShedEnter);
+            _view.InitReward(RewardEnter);
 
             var cursorTrailController = ConfigureCursorTrail();
         }
@@ -49,6 +50,12 @@ namespace Ui
         {
             _profilePlayer.CurrentState.Value = GameState.Shed;
             _profilePlayer.AnalyticTools.SendMessage("enter shed");
+        }
+
+        private void RewardEnter()
+        {
+            _profilePlayer.CurrentState.Value = GameState.Reward;
+            _profilePlayer.AnalyticTools.SendMessage("get reward");
         }
 
         #endregion

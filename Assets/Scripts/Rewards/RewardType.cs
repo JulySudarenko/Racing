@@ -1,5 +1,8 @@
-﻿public enum RewardType
+﻿namespace Rewards
 {
-    Wood,
-    Diamond
+    public enum RewardType
+    {
+        Wood,
+        Diamond
+    }
 }
