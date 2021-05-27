@@ -20,33 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d736d91-0361-4f9b-a9ec-16f4bbc601ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Rewards/RewardController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Rewards/RewardView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Racing/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Racing/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Racing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Racing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/ObserverView.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/ObserverView.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/mainMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/mainMenu.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Features/InventoryFeature/InventoryView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Features/InventoryFeature/InventoryView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Car/CarView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Car/CarView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Observer/AIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Observer/AIController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Observer/ObserverView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Observer/AIView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Observer/ObserverView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Observer/AIView.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Observer/AIView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Observer/AIView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ProfilePlayer/GameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ProfilePlayer/GameState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rewards/ContainerSlotRewardView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Rewards/ContainerSlotRewardView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rewards/CurrencyView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Rewards/CurrencyView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rewards/DailyRewardController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rewards/DailyRewardController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Rewards/RewardController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rewards/DailyRewardView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rewards/DailyRewardView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Rewards/RewardView.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rewards/InstallView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rewards/InstallView.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rewards/Reward.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Rewards/Reward.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rewards/RewardType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Rewards/RewardType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Root.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Root.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,9 +65,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/UpdateManager/Scripts/UpdateManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/TapeBackground/TapeBackgroundController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/TapeBackground/Background.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ContentDataSource/Items/ItemConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ContentDataSource/Items/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ContentDataSource/Items/Interfaces.cs" />
@@ -111,7 +88,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Features/AbilitiesFeature/AbilityRepository.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ProfilePlayer/Car.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ProfilePlayer/ProfilePlayer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Root.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Observer/ObserverController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Features/AbilitiesFeature/AbilitiesController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Observer/DataPlayer.cs" />
@@ -123,19 +99,23 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Features/InventoryFeature/InventoryView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ProfilePlayer/GameState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewards/InstallView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Observer/ObserverView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewards/DailyRewardView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewards/DailyRewardController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewards/CurrencyView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Observer/AIController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Observer/AIView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Car/CarView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewards/RewardView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewards/RewardController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Observer/AIView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DOTween/ShakeData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DOTween/DOTweenData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DOTween/ButtonScaleBehavior.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Root.cs" />
       </list>
     </option>
   </component>
@@ -157,10 +137,10 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="6004">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="6004" />
+      <option name="pid" />
       <option name="selectedOptions">
         <set />
       </option>

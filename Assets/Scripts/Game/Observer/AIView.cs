@@ -1,5 +1,6 @@
 ﻿using Rewards;
 using TMPro;
+using Ui;
 using UnityEngine;
 using UnityEngine.UI;
 

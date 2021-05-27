@@ -1,5 +1,6 @@
 ﻿using Profile;
 using Profile.Analytic;
+using Ui;
 using UnityEngine;
 
 internal sealed class Root : MonoBehaviour

@@ -3,6 +3,9 @@ using Tools;
 using UnityEngine;
 using Game.CursorTrail;
 
+using DG.Tweening;
+using JoostenProductions;
+
 namespace Ui
 {
     internal sealed class MainMenuController : BaseController
@@ -27,6 +30,7 @@ namespace Ui
             _view.InitReward(RewardEnter);
 
             var cursorTrailController = ConfigureCursorTrail();
+           //InitTweenButtons();
         }
 
         #endregion
@@ -57,6 +61,12 @@ namespace Ui
             _profilePlayer.CurrentState.Value = GameState.Reward;
             _profilePlayer.AnalyticTools.SendMessage("get reward");
         }
+        //
+        // private void InitTweenButtons()
+        // {
+        //     var scaleStartButton = new ButtonScaleBehavior(_view.ButtonStart);
+        //     scaleStartButton.ScaleButton();
+        // }
 
         #endregion
     }
