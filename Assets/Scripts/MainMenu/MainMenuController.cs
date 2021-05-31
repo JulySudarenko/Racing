@@ -1,10 +1,8 @@
-﻿using Profile;
+﻿using DOTween;
+using Profile;
 using Tools;
 using UnityEngine;
 using Game.CursorTrail;
-
-using DG.Tweening;
-using JoostenProductions;
 
 namespace Ui
 {
@@ -14,23 +12,23 @@ namespace Ui
 
         private readonly ProfilePlayer _profilePlayer;
         private readonly MainMenuView _view;
+        private readonly ScaleData _scaleData;
 
         #endregion
 
         #region Life cycle
 
-        public MainMenuController(Transform placeForUi, ProfilePlayer profilePlayer)
+        public MainMenuController(Transform placeForUi, ProfilePlayer profilePlayer, ScaleData scaleData)
         {
             _profilePlayer = profilePlayer;
+            _scaleData = scaleData;
             _view = ResourceLoader.LoadAndInstantiateObject<MainMenuView>(
                 new ResourcePath {PathResource = "Prefabs/mainMenu"}, placeForUi, false);
             AddGameObjects(_view.gameObject);
-            _view.Init(StartGame);
-            _view.InitShed(ShedEnter);
-            _view.InitReward(RewardEnter);
-
+            InitButtons();
+            
             var cursorTrailController = ConfigureCursorTrail();
-           //InitTweenButtons();
+
         }
 
         #endregion
@@ -44,6 +42,14 @@ namespace Ui
             return cursorTrailController;
         }
 
+        private void InitButtons()
+        {
+            _view.InitStartGame(StartGame);
+            _view.InitShed(ShedEnter);
+            _view.InitReward(RewardEnter);
+            _view.InitExit(ExitGame);
+        }
+        
         private void StartGame()
         {
             _profilePlayer.CurrentState.Value = GameState.Game;
@@ -61,12 +67,11 @@ namespace Ui
             _profilePlayer.CurrentState.Value = GameState.Reward;
             _profilePlayer.AnalyticTools.SendMessage("get reward");
         }
-        //
-        // private void InitTweenButtons()
-        // {
-        //     var scaleStartButton = new ButtonScaleBehavior(_view.ButtonStart);
-        //     scaleStartButton.ScaleButton();
-        // }
+        
+        private void ExitGame()
+        {
+            _profilePlayer.CurrentState.Value = GameState.Exit;
+        }
 
         #endregion
     }

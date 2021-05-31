@@ -1,7 +1,7 @@
 ﻿using DG.Tweening;
 using UnityEngine;
 
-namespace Ui
+namespace DOTween
 {
     public sealed class CameraShakeBehaviour
     {
@@ -13,14 +13,14 @@ namespace Ui
             _data = data;
         }
 
-        private void Init()
+        public void Init()
         {
             _cameraTransform = Camera.main.transform;
         }
 
         public void CreateShake()
         {
-            Tweener tweener = DOTween.Shake(() => _cameraTransform.position, pos => _cameraTransform.position = pos,
+            Tweener tweener = DG.Tweening.DOTween.Shake(() => _cameraTransform.position, pos => _cameraTransform.position = pos,
                 _data.Duration, _data.Strength, _data.Vibrato, _data.Randomness);
         }
     }

@@ -47,6 +47,7 @@
             <e p="ButtonScaleBehavior.cs" t="Include" />
             <e p="CameraShakeBehaviour.cs" t="Include" />
             <e p="DOTweenData.cs" t="Include" />
+            <e p="MessageBoxBehaviour.cs" t="Include" />
             <e p="ScaleData.cs" t="Include" />
             <e p="ShakeData.cs" t="Include" />
           </e>

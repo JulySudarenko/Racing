@@ -238,6 +238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b28390e0281076449d38f69e15388ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _doTweenData: {fileID: 11400000, guid: 095b39ee893da7a4296c2a323903d423, type: 2}
   _placeForUi: {fileID: 1364129558}
   _speedCar: 15
   _forceCar: 15

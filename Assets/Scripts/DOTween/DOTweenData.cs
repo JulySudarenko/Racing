@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 
-namespace Ui
+namespace DOTween
 {
-    [CreateAssetMenu(fileName = "DOTweenData", menuName = "DOTweenData")]
-    public sealed class DOTweenData : ScriptableObject
+    [CreateAssetMenu(fileName = "Configs/DoTweenData", menuName = "DoTweenData")]
+    public sealed class DoTweenData : ScriptableObject
     {
         [Header("Game DoTween data")] [SerializeField]
         private string _shakeCameraOnLosePath = "ShakesDataOnLose";
@@ -14,17 +14,30 @@ namespace Ui
         private ScaleData _scalerStartButton;
         private ShakeData _shakeOnLose;
 
-        // private ScaleData ScaleStartButton
-        // {
-        //     get
-        //     {
-        //         if (_scalerStartButton == null)
-        //         {
-        //             _scalerStartButton = LoadObject<ScaleData>("DataSource/DOTween" + _scaleStartButtonPath);
-        //         }
-        //
-        //         return _scalerStartButton;
-        //     }
-        // }
+        public ScaleData ScaleStartButton
+        {
+            get
+            {
+                if (_scalerStartButton == null)
+                {
+                    _scalerStartButton = Resources.Load<ScaleData>("DataSource/DoTween" + _scaleStartButtonPath);
+                }
+        
+                return _scalerStartButton;
+            }
+        }
+
+        public ShakeData ShakeCameraOnLose
+        {
+            get
+            {
+                if (_shakeOnLose == null)
+                {
+                    _shakeOnLose = Resources.Load<ShakeData>("DataSource/DoTween" + _shakeCameraOnLosePath);
+                }
+
+                return _shakeOnLose;
+            }
+        }
     }
 }

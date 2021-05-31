@@ -1,10 +1,8 @@
 ﻿using UnityEngine;
-using Tools;
 
-
-namespace Ui
+namespace DOTween
 {
-    [CreateAssetMenu(fileName = "ShakesData", menuName = "ShakesData")]
+    [CreateAssetMenu(fileName = "Configs/ShakesData", menuName = "ShakesData")]
     public sealed class ShakeData : ScriptableObject
     {
         public float Duration;

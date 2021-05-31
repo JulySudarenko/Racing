@@ -1,9 +1,9 @@
 ﻿using DG.Tweening;
 using UnityEngine;
 
-namespace Ui
+namespace DOTween
 {
-    [CreateAssetMenu(fileName = "ScaleData", menuName = "ScaleData")]
+    [CreateAssetMenu(fileName = "Configs/ScaleData", menuName = "ScaleData")]
     public sealed class ScaleData : ScriptableObject
     {
         public Ease Ease;

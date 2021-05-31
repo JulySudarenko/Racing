@@ -1,5 +1,6 @@
 ﻿using Company.Project.ContentData;
 using Company.Project.Features.Abilities;
+using DOTween;
 using Game.InputLogic;
 using Game.Observer;
 using Game.TapeBackground;
@@ -11,9 +12,8 @@ namespace Game
 {
     internal sealed class GameController : BaseController
     {
-        #region Life cycle
 
-        public GameController(Transform placeForUi, ProfilePlayer profilePlayer)
+        public GameController(Transform placeForUi, ProfilePlayer profilePlayer, ShakeData shakeData)
         {
             SubscriptionProperty<float> leftMoveDiff = new SubscriptionProperty<float>();
             SubscriptionProperty<float> rightMoveDiff = new SubscriptionProperty<float>();
@@ -27,17 +27,13 @@ namespace Game
             CarController carController = new CarController(leftMoveDiff, rightMoveDiff);
             AddController(carController);
 
-            AIController aiController = new AIController(placeForUi);
+            AIController aiController = new AIController(placeForUi, shakeData);
             AddController(aiController);
 
             var abilityController = ConfigureAbilityController(placeForUi, carController, profilePlayer);
             abilityController.ShowAbilities();
         }
-
-        #endregion
-
-        #region Methods
-
+        
         private IAbilitiesController ConfigureAbilityController(
             Transform placeForUi,
             IAbilityActivator abilityActivator, ProfilePlayer profilePlayer)
@@ -60,7 +56,5 @@ namespace Game
 
             return abilitiesController;
         }
-
-        #endregion
     }
 }

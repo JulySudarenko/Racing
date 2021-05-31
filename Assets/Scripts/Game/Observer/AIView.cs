@@ -1,4 +1,5 @@
-﻿using Rewards;
+﻿using DOTween;
+using Rewards;
 using TMPro;
 using Ui;
 using UnityEngine;
@@ -27,7 +28,8 @@ namespace Game.Observer
         [SerializeField] private int _winDiamondBonus = 50;
 
         private CurrencyView _currencyView;
-
+        private CameraShakeBehaviour _cameraShaker;
+        
         private int _allCountMoneyPlayer;
         private int _allCountHealthPlayer;
         private int _allCountForcePlayer;
@@ -40,7 +42,7 @@ namespace Game.Observer
 
         private Enemy _enemy;
 
-        public void Init(CurrencyView currencyView)
+        public void Init(CurrencyView currencyView, ShakeData shakeData)
         {
             _enemy = new Enemy("Enemy Flappy");
 
@@ -58,6 +60,9 @@ namespace Game.Observer
 
             _currencyView = currencyView;
 
+            _cameraShaker = new CameraShakeBehaviour(shakeData);
+            _cameraShaker.Init();
+            
             _addHealthButton.onClick.AddListener(() => ChangeHealth(true));
             _minusHealthButton.onClick.AddListener(() => ChangeHealth(false));
 
@@ -157,6 +162,7 @@ namespace Game.Observer
             {
                 _currencyView.AddDiamonds(-_winDiamondBonus / 2);
                 _currencyView.AddWood(-_winWoodBonus / 2);
+                _cameraShaker.CreateShake();
             }
 
             Debug.Log(_allCountForcePlayer >= _enemy.Force

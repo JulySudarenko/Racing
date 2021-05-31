@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Company.Project.Content
 {
-    [CreateAssetMenu(fileName = "Upgrade item", menuName = "Upgrade item", order = 0)]
+    [CreateAssetMenu(fileName = "Configs/Upgrade item", menuName = "Upgrade item", order = 0)]
     public class UpgradeItemConfig : ScriptableObject
     {
         public ItemConfig itemConfig;

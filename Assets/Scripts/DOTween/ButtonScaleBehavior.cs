@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Ui
+namespace DOTween
 {
     internal sealed class ButtonScaleBehavior : Button
     {
@@ -12,7 +12,7 @@ namespace Ui
         
         public void ScaleButton()
         {
-            Sequence sequence = DOTween.Sequence();
+            Sequence sequence = DG.Tweening.DOTween.Sequence();
             sequence.Append(transform.DOScale(_scaleUp, _duration).SetEase(Ease.OutSine));
             sequence.SetLoops(-1, LoopType.Yoyo);
         }
