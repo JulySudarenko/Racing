@@ -240,6 +240,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _placeForUi: {fileID: 1364129558}
   _speedCar: 15
+  _forceCar: 15
+  _crimeRate: 4
 --- !u!114 &1364129555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,7 +299,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0

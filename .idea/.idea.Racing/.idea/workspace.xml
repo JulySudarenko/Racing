@@ -20,36 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d736d91-0361-4f9b-a9ec-16f4bbc601ec" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Racing/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Racing/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Racing/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Racing/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Racing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Racing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/DataSource/Abilities.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/DataSource/Abilities/AbilityBomb.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/DataSource/Abilities/AbilityBomb.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/DataSource/Abilities/AbilityItemConfigDataSource.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/DataSource/Abilities/AbilityItemConfigDataSource.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/DataSource/Abilities/AbilityOil.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/DataSource/Abilities/AbilityOil.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/DataSource/Upgrade/Upgrade item.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/DataSource/Upgrade/Upgrade item.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/DataSource/Upgrade/UpgradeItemConfigDataSource.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/DataSource/Upgrade/UpgradeItemConfigDataSource.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/AbilityCollectionView.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/AbilityCollectionView.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/CannonBomb.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/CannonBomb.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Car.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Car.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/InventoryView.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/InventoryView.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Oil.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Oil.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/swipeInputView.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/swipeInputView.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ContentDataSource/UpgradeItems/UpgradeItemConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ContentDataSource/UpgradeItems/UpgradeItemConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Features/AbilitiesFeature/Abilities/GunAbility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Features/AbilitiesFeature/Abilities/GunAbility.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Features/AbilitiesFeature/AbilityCollectionView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Features/AbilitiesFeature/AbilityCollectionView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Features/AbilitiesFeature/AbilityRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Features/AbilitiesFeature/AbilityRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Features/InventoryFeature/InventoryModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Features/InventoryFeature/InventoryModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Features/InventoryFeature/InventoryView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Features/InventoryFeature/InventoryView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Features/ShedFeature/ShedController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Features/ShedFeature/ShedController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/InputGame/InputGameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/InputGame/InputGameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/InputGame/InputSwipeView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/InputGame/InputSwipeView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ProfilePlayer/ProfilePlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ProfilePlayer/ProfilePlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Root.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Root.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Features/ShedFeature/Interfaces.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Features/ShedFeature/Interfaces.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Observer/AIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Observer/AIController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Observer/DataPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Observer/DataPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Observer/ObserverView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Observer/ObserverView.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,24 +84,30 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ContentDataSource/AbilityItems/AbilityItemConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ProfilePlayer/Shop/ShopTools.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Root.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ClickChecker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/InputGame/InputSwipeView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/InputGame/InputGameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Features/AbilitiesFeature/Interfaces.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Features/AbilitiesFeature/AbilitiesController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ContentDataSource/UpgradeItems/UpgradeItemConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Features/ShedFeature/UpgradeHandlers/SpeedUpgradeHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Features/InventoryFeature/InventoryModel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ProfilePlayer/Car.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Features/ShedFeature/UpgradeHandlers/UpgradeHandlersRepository.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ProfilePlayer/ProfilePlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Features/ShedFeature/ShedController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Features/AbilitiesFeature/AbilityCollectionView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Features/InventoryFeature/InventoryView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Features/AbilitiesFeature/Abilities/GunAbility.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Features/AbilitiesFeature/AbilityRepository.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ProfilePlayer/Car.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ProfilePlayer/ProfilePlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Root.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Observer/ObserverController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Features/AbilitiesFeature/AbilitiesController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Observer/DataPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Observer/AIController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Observer/ObserverView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Observer/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Features/ShedFeature/Interfaces.cs" />
       </list>
     </option>
   </component>
@@ -146,10 +128,10 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="22328">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="22328" />
+      <option name="pid" />
       <option name="selectedOptions">
         <set />
       </option>
