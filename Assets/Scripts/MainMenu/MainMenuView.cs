@@ -1,4 +1,6 @@
-﻿using DOTween;
+﻿using DoTween;
+using DoTween.Configs;
+using Tools;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -13,10 +15,15 @@ namespace Ui
         [SerializeField] private Button _buttonReward;
         [SerializeField] private Button _buttonExit;
         
+        private const string PATH = "DataSource/DoTween/ScaleDataStartButton";
+        private ScaleData _data;
+        
         public void InitStartGame(UnityAction startGame)
         {
             _buttonStart.onClick.AddListener(startGame);
-            _buttonStart.ScaleButton();
+            var scaleStartButtonPath = new ResourcePath {PathResource = PATH};
+            _data = ResourceLoader.LoadObject<ScaleData>(scaleStartButtonPath);
+            _buttonStart.ScaleButton(_data);
         }
 
         public void InitShed(UnityAction shedEnter)

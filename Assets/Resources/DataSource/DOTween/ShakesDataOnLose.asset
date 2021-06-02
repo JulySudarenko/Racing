@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c806928eaa474f6bbf778762f0511b8e, type: 3}
   m_Name: ShakesDataOnLose
   m_EditorClassIdentifier: 
-  Duration: 1
-  Strength: 1.5
-  Vibrato: 25
-  Randomness: 50
+  _duration: 1
+  _strength: 1.5
+  _vibrato: 25
+  _randomness: 50

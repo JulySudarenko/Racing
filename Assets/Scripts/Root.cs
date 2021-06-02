@@ -1,11 +1,10 @@
-﻿using DOTween;
+﻿using DoTween.Configs;
 using Profile;
 using Profile.Analytic;
 using UnityEngine;
 
 internal sealed class Root : MonoBehaviour
 {
-    [SerializeField] private DoTweenData _doTweenData;
     [SerializeField] private Transform _placeForUi;
     [SerializeField] private float _speedCar = 15.0f;
     [SerializeField] private float _forceCar = 15.0f;
@@ -17,7 +16,7 @@ internal sealed class Root : MonoBehaviour
     {
         ProfilePlayer profilePlayer = new ProfilePlayer(_speedCar, _forceCar, _crimeRate, new UnityAnalyticTools());
         profilePlayer.CurrentState.Value = GameState.Start;
-        _mainController = new MainController(_placeForUi, profilePlayer, _doTweenData);
+        _mainController = new MainController(_placeForUi, profilePlayer);
     }
 
     private void OnDestroy()

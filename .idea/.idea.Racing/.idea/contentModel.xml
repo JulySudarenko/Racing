@@ -46,10 +46,11 @@
           <e p="DOTween" t="Include">
             <e p="ButtonScaleBehavior.cs" t="Include" />
             <e p="CameraShakeBehaviour.cs" t="Include" />
-            <e p="DOTweenData.cs" t="Include" />
+            <e p="Configs" t="Include">
+              <e p="ScaleData.cs" t="Include" />
+              <e p="ShakeData.cs" t="Include" />
+            </e>
             <e p="MessageBoxBehaviour.cs" t="Include" />
-            <e p="ScaleData.cs" t="Include" />
-            <e p="ShakeData.cs" t="Include" />
           </e>
           <e p="Features" t="Include">
             <e p="AbilitiesFeature" t="Include">

@@ -1,7 +1,6 @@
-﻿using DOTween;
+﻿using DoTween;
 using Rewards;
 using TMPro;
-using Ui;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -26,11 +25,11 @@ namespace Game.Observer
 
         [SerializeField] private int _winWoodBonus = 100;
         [SerializeField] private int _winDiamondBonus = 50;
+        [SerializeField] private int _maxCrimeRate = 5;
 
         private CurrencyView _currencyView;
         private CameraShakeBehaviour _cameraShaker;
         
-        private int _allCountMoneyPlayer;
         private int _allCountHealthPlayer;
         private int _allCountForcePlayer;
         private int _allCountCrimeRatePlayer;
@@ -42,7 +41,7 @@ namespace Game.Observer
 
         private Enemy _enemy;
 
-        public void Init(CurrencyView currencyView, ShakeData shakeData)
+        public void Init(CurrencyView currencyView)
         {
             _enemy = new Enemy("Enemy Flappy");
 
@@ -60,8 +59,7 @@ namespace Game.Observer
 
             _currencyView = currencyView;
 
-            _cameraShaker = new CameraShakeBehaviour(shakeData);
-            _cameraShaker.Init();
+            _cameraShaker = new CameraShakeBehaviour();
             
             _addHealthButton.onClick.AddListener(() => ChangeHealth(true));
             _minusHealthButton.onClick.AddListener(() => ChangeHealth(false));
@@ -94,16 +92,6 @@ namespace Game.Observer
             _force.Detach(_enemy);
         }
 
-        private void ChangeMoney(bool isAddCount)
-        {
-            if (isAddCount)
-                _allCountMoneyPlayer++;
-            else
-                _allCountMoneyPlayer--;
-
-            ChangeDataWindow(_allCountMoneyPlayer, DataType.Money);
-        }
-
         private void ChangeHealth(bool isAddCount)
         {
             if (isAddCount)
@@ -129,8 +117,8 @@ namespace Game.Observer
             if (isAddCount)
             {
                 _allCountCrimeRatePlayer++;
-                if (_allCountCrimeRatePlayer > 5)
-                    _allCountCrimeRatePlayer = 5;
+                if (_allCountCrimeRatePlayer > _maxCrimeRate)
+                    _allCountCrimeRatePlayer = _maxCrimeRate;
             }
             else
             {
@@ -147,7 +135,7 @@ namespace Game.Observer
         {
             if (_allCountCrimeRatePlayer < 3)
             {
-                Debug.Log("<color=#07FF00>Passed through</color>");
+                Debug.Log("<color=#07FF10>Passed through</color>");
             }
         }
 

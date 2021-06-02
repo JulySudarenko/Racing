@@ -1,4 +1,4 @@
-﻿using DOTween;
+﻿using DoTween.Configs;
 using Profile;
 using Tools;
 using UnityEngine;
@@ -12,16 +12,14 @@ namespace Ui
 
         private readonly ProfilePlayer _profilePlayer;
         private readonly MainMenuView _view;
-        private readonly ScaleData _scaleData;
 
         #endregion
 
         #region Life cycle
 
-        public MainMenuController(Transform placeForUi, ProfilePlayer profilePlayer, ScaleData scaleData)
+        public MainMenuController(Transform placeForUi, ProfilePlayer profilePlayer)
         {
             _profilePlayer = profilePlayer;
-            _scaleData = scaleData;
             _view = ResourceLoader.LoadAndInstantiateObject<MainMenuView>(
                 new ResourcePath {PathResource = "Prefabs/mainMenu"}, placeForUi, false);
             AddGameObjects(_view.gameObject);

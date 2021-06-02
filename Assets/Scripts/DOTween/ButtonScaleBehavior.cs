@@ -1,25 +1,22 @@
 ﻿using DG.Tweening;
-using UnityEngine;
+using DoTween.Configs;
 using UnityEngine.UI;
 
-namespace DOTween
+namespace DoTween
 {
     internal sealed class ButtonScaleBehavior : Button
     {
-        [SerializeField] public ScaleData _scaleData;
-        [SerializeField] private Vector2 _scaleUp = new Vector2(1.2f, 1.2f);
-        private float _duration = 1.0f;
-        
-        public void ScaleButton()
+        public void ScaleButton(ScaleData data)
         {
-            Sequence sequence = DG.Tweening.DOTween.Sequence();
-            sequence.Append(transform.DOScale(_scaleUp, _duration).SetEase(Ease.OutSine));
-            sequence.SetLoops(-1, LoopType.Yoyo);
+            Sequence sequence = DOTween.Sequence();
+            sequence.Append(transform.DOScale(data.Scale, data.Duration).SetEase(data.Easy));
+            sequence.SetLoops(-1, data.LoopType);
         }
 
-        public void OnDestroy()
+        protected override void OnDestroy()
         {
             transform.DOKill();
+            base.OnDestroy();
         }
     }
 }

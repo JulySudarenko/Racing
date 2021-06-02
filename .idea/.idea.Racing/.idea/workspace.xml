@@ -22,45 +22,28 @@
     <list default="true" id="8d736d91-0361-4f9b-a9ec-16f4bbc601ec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Racing/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Racing/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Racing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Racing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenUpgradeManager.XML" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenUpgradeManager.XML.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenUpgradeManager.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenUpgradeManager.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/AIView.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/AIView.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/AbilityCollectionView.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/AbilityCollectionView.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/AbilityCollectionViewOld.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/AbilityCollectionViewOld.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/ContainerSlotReward.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/ContainerSlotReward.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/InventoryView.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/InventoryView.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/RewardView.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/RewardView.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Ui Elements/Container Count Currency.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Ui Elements/Container Count Currency.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/mainMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/mainMenu.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/mainMenuOld.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/mainMenuOld.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/DataSource/DOTween/DoTweenData.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/DataSource/DOTween/DoTweenData.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/DataSource/DOTween/ScaleDataStartButton.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/DataSource/DOTween/ScaleDataStartButton.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/DataSource/DOTween/ShakesDataOnLose.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/DataSource/DOTween/ShakesDataOnLose.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ContentDataSource/AbilityItems/AbilityItemConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ContentDataSource/AbilityItems/AbilityItemConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ContentDataSource/AbilityItems/AbilityItemConfigDataSource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ContentDataSource/AbilityItems/AbilityItemConfigDataSource.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ContentDataSource/Items/ItemConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ContentDataSource/Items/ItemConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ContentDataSource/UpgradeItems/UpgradeItemConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ContentDataSource/UpgradeItems/UpgradeItemConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ContentDataSource/UpgradeItems/UpgradeItemConfigDataSource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ContentDataSource/UpgradeItems/UpgradeItemConfigDataSource.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ContentDataSource/ContentDataSourceLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ContentDataSource/ContentDataSourceLoader.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/DOTween/ButtonScaleBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DOTween/ButtonScaleBehavior.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/DOTween/CameraShakeBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DOTween/CameraShakeBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DOTween/DOTweenData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DOTween/DOTweenData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DOTween/DOTweenData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DOTween/DOTweenData.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DOTween/ScaleData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DOTween/ScaleData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DOTween/ShakeData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DOTween/ShakeData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Features/ShedFeature/ShedController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Features/ShedFeature/ShedController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DOTween/DOTweenData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DOTween/DOTweenData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DOTween/MessageBoxBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DOTween/MessageBoxBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DOTween/ScaleData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DOTween/ScaleData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DOTween/ShakeData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DOTween/ShakeData.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Observer/AIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Observer/AIController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Observer/AIView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Observer/AIView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ProfilePlayer/GameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ProfilePlayer/GameState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Root.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Root.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +66,10 @@
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/2020.3.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/351E49E2-A5BF-4FD6-BEAB-B458CE2255F3/f2/a50ce978/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E81851A0-DC73-4A79-AFA9-F5B7273162BE/80/8aff300d/EventHandler`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/2020.3.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F84F74CE-C460-43BE-8965-07FA92F4C1AE/ec/66320097/IEventSystemHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2348FB5E-CC9E-4E68-9F37-F7D7FADAEA9A/41/161c4fe9/DOTweenComponent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/2020.3.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/62FFEEB7-EC02-4BEA-B61E-5FBF8D44AC5B/27/e14f2c2e/IReadOnlyList`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/2020.3.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Unity/tetra_ul-racingrepository-09ab429d3ab0.2021-04-16/Assets/Script/BaseController.cs" root0="SKIP_HIGHLIGHTING" />
@@ -99,14 +85,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/InputGame/InputGameController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Features/AbilitiesFeature/Interfaces.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Features/ShedFeature/UpgradeHandlers/SpeedUpgradeHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Features/InventoryFeature/InventoryModel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Features/ShedFeature/UpgradeHandlers/UpgradeHandlersRepository.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Features/AbilitiesFeature/AbilityCollectionView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Features/AbilitiesFeature/Abilities/GunAbility.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Features/AbilitiesFeature/AbilityRepository.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ProfilePlayer/Car.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ProfilePlayer/ProfilePlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Observer/ObserverController.cs" />
@@ -131,8 +109,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/DOTween/CameraShakeBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ProfilePlayer/GameState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DOTween/MessageBoxBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Root.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DOTween/ScaleData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DOTween/DOTweenData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DOTween/DoTweenData.cs" />
@@ -144,12 +120,22 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ContentDataSource/Items/ItemConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ContentDataSource/AbilityItems/AbilityItemConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ContentDataSource/AbilityItems/AbilityItemConfigDataSource.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Features/ShedFeature/ShedController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DoTween/MessageBoxBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DoTween/Configs/ScaleData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DoTween/Configs/ShakeData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tools/ResourceLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ContentDataSource/ContentDataSourceLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DoTween/Configs/DoTweenData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DoTween/CameraShakeBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Observer/AIController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Observer/AIView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Root.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DoTween/ButtonScaleBehavior.cs" />
       </list>
     </option>
   </component>
@@ -171,10 +157,10 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="26636">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="18228">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="26636" />
+      <option name="pid" value="18228" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -216,86 +202,86 @@
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
     <state width="537" height="464" key="DebuggerActiveHint/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1621927237176" />
-    <state width="1493" height="278" key="GridCell.Tab.0.bottom" timestamp="1622463381174">
+    <state width="1493" height="278" key="GridCell.Tab.0.bottom" timestamp="1622618021059">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
     <state width="1493" height="279" key="GridCell.Tab.0.bottom/1920.-154.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1620910878443" />
-    <state width="1493" height="278" key="GridCell.Tab.0.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1622463381174" />
-    <state width="1493" height="278" key="GridCell.Tab.0.center" timestamp="1622463381174">
+    <state width="1493" height="278" key="GridCell.Tab.0.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1622618021059" />
+    <state width="1493" height="278" key="GridCell.Tab.0.center" timestamp="1622618021058">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
     <state width="1493" height="279" key="GridCell.Tab.0.center/1920.-154.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1620910878442" />
-    <state width="1493" height="278" key="GridCell.Tab.0.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1622463381174" />
-    <state width="1493" height="278" key="GridCell.Tab.0.left" timestamp="1622463381174">
+    <state width="1493" height="278" key="GridCell.Tab.0.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1622618021058" />
+    <state width="1493" height="278" key="GridCell.Tab.0.left" timestamp="1622618021058">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
     <state width="1493" height="279" key="GridCell.Tab.0.left/1920.-154.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1620910878442" />
-    <state width="1493" height="278" key="GridCell.Tab.0.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1622463381174" />
-    <state width="1493" height="278" key="GridCell.Tab.0.right" timestamp="1622463381174">
+    <state width="1493" height="278" key="GridCell.Tab.0.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1622618021058" />
+    <state width="1493" height="278" key="GridCell.Tab.0.right" timestamp="1622618021058">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
     <state width="1493" height="279" key="GridCell.Tab.0.right/1920.-154.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1620910878442" />
-    <state width="1493" height="278" key="GridCell.Tab.0.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1622463381174" />
-    <state width="1493" height="278" key="GridCell.Tab.1.bottom" timestamp="1622463381174">
+    <state width="1493" height="278" key="GridCell.Tab.0.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1622618021058" />
+    <state width="1493" height="278" key="GridCell.Tab.1.bottom" timestamp="1622618021059">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
     <state width="1493" height="279" key="GridCell.Tab.1.bottom/1920.-154.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1620910878444" />
-    <state width="1493" height="278" key="GridCell.Tab.1.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1622463381174" />
-    <state width="1493" height="278" key="GridCell.Tab.1.center" timestamp="1622463381174">
+    <state width="1493" height="278" key="GridCell.Tab.1.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1622618021059" />
+    <state width="1493" height="278" key="GridCell.Tab.1.center" timestamp="1622618021059">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
     <state width="1493" height="279" key="GridCell.Tab.1.center/1920.-154.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1620910878444" />
-    <state width="1493" height="278" key="GridCell.Tab.1.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1622463381174" />
-    <state width="1493" height="278" key="GridCell.Tab.1.left" timestamp="1622463381174">
+    <state width="1493" height="278" key="GridCell.Tab.1.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1622618021059" />
+    <state width="1493" height="278" key="GridCell.Tab.1.left" timestamp="1622618021059">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
     <state width="1493" height="279" key="GridCell.Tab.1.left/1920.-154.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1620910878443" />
-    <state width="1493" height="278" key="GridCell.Tab.1.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1622463381174" />
-    <state width="1493" height="278" key="GridCell.Tab.1.right" timestamp="1622463381174">
+    <state width="1493" height="278" key="GridCell.Tab.1.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1622618021059" />
+    <state width="1493" height="278" key="GridCell.Tab.1.right" timestamp="1622618021059">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
     <state width="1493" height="279" key="GridCell.Tab.1.right/1920.-154.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1620910878444" />
-    <state width="1493" height="278" key="GridCell.Tab.1.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1622463381174" />
-    <state width="1493" height="278" key="GridCell.Tab.2.bottom" timestamp="1622463381174">
+    <state width="1493" height="278" key="GridCell.Tab.1.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1622618021059" />
+    <state width="1493" height="278" key="GridCell.Tab.2.bottom" timestamp="1622618021059">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
     <state width="1493" height="279" key="GridCell.Tab.2.bottom/1920.-154.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1620910878444" />
-    <state width="1493" height="278" key="GridCell.Tab.2.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1622463381174" />
-    <state width="1493" height="278" key="GridCell.Tab.2.center" timestamp="1622463381174">
+    <state width="1493" height="278" key="GridCell.Tab.2.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1622618021059" />
+    <state width="1493" height="278" key="GridCell.Tab.2.center" timestamp="1622618021059">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
     <state width="1493" height="279" key="GridCell.Tab.2.center/1920.-154.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1620910878444" />
-    <state width="1493" height="278" key="GridCell.Tab.2.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1622463381174" />
-    <state width="1493" height="278" key="GridCell.Tab.2.left" timestamp="1622463381174">
+    <state width="1493" height="278" key="GridCell.Tab.2.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1622618021059" />
+    <state width="1493" height="278" key="GridCell.Tab.2.left" timestamp="1622618021059">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
     <state width="1493" height="279" key="GridCell.Tab.2.left/1920.-154.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1620910878444" />
-    <state width="1493" height="278" key="GridCell.Tab.2.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1622463381174" />
-    <state width="1493" height="278" key="GridCell.Tab.2.right" timestamp="1622463381174">
+    <state width="1493" height="278" key="GridCell.Tab.2.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1622618021059" />
+    <state width="1493" height="278" key="GridCell.Tab.2.right" timestamp="1622618021059">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
     <state width="1493" height="279" key="GridCell.Tab.2.right/1920.-154.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1620910878444" />
-    <state width="1493" height="278" key="GridCell.Tab.2.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1622463381174" />
-    <state width="1493" height="278" key="GridCell.Tab.3.bottom" timestamp="1622463381175">
+    <state width="1493" height="278" key="GridCell.Tab.2.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1622618021059" />
+    <state width="1493" height="278" key="GridCell.Tab.3.bottom" timestamp="1622618021059">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
     <state width="1493" height="279" key="GridCell.Tab.3.bottom/1920.-154.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1620910878444" />
-    <state width="1493" height="278" key="GridCell.Tab.3.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1622463381175" />
-    <state width="1493" height="278" key="GridCell.Tab.3.center" timestamp="1622463381175">
+    <state width="1493" height="278" key="GridCell.Tab.3.bottom/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1622618021059" />
+    <state width="1493" height="278" key="GridCell.Tab.3.center" timestamp="1622618021059">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
     <state width="1493" height="279" key="GridCell.Tab.3.center/1920.-154.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1620910878444" />
-    <state width="1493" height="278" key="GridCell.Tab.3.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1622463381175" />
-    <state width="1493" height="278" key="GridCell.Tab.3.left" timestamp="1622463381175">
+    <state width="1493" height="278" key="GridCell.Tab.3.center/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1622618021059" />
+    <state width="1493" height="278" key="GridCell.Tab.3.left" timestamp="1622618021059">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
     <state width="1493" height="279" key="GridCell.Tab.3.left/1920.-154.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1620910878444" />
-    <state width="1493" height="278" key="GridCell.Tab.3.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1622463381175" />
-    <state width="1493" height="278" key="GridCell.Tab.3.right" timestamp="1622463381175">
+    <state width="1493" height="278" key="GridCell.Tab.3.left/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1622618021059" />
+    <state width="1493" height="278" key="GridCell.Tab.3.right" timestamp="1622618021059">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
     <state width="1493" height="279" key="GridCell.Tab.3.right/1920.-154.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1620910878444" />
-    <state width="1493" height="278" key="GridCell.Tab.3.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1622463381175" />
+    <state width="1493" height="278" key="GridCell.Tab.3.right/1920.-154.1536.832/0.0.1920.1040@1920.-154.1536.832" timestamp="1622618021059" />
     <state x="2496" y="-40" key="RiderGenerateDialog" timestamp="1621147046412">
       <screen x="1920" y="-154" width="1536" height="832" />
     </state>
@@ -354,6 +340,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/DoTween/ButtonScaleBehavior.cs</url>
+          <line>11</line>
+          <properties documentPath="D:\geekbrains.ru\Projects\Unity\Racing\Assets\Scripts\DoTween\ButtonScaleBehavior.cs" initialLine="31">
+            <startOffsets>
+              <option value="268" />
+            </startOffsets>
+            <endOffsets>
+              <option value="349" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="64" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
