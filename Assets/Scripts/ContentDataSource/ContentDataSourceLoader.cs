@@ -18,7 +18,5 @@ namespace Company.Project.ContentData
             var config = ResourceLoader.LoadObject<AbilityItemConfigDataSource>(resourcePath);
             return config == null ? new List<AbilityItemConfig>() : config.itemConfigs.ToList();
         }
-        
-        
     }
 }

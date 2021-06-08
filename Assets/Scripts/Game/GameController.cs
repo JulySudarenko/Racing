@@ -11,8 +11,6 @@ namespace Game
 {
     internal sealed class GameController : BaseController
     {
-        #region Life cycle
-
         public GameController(Transform placeForUi, ProfilePlayer profilePlayer)
         {
             SubscriptionProperty<float> leftMoveDiff = new SubscriptionProperty<float>();
@@ -33,10 +31,6 @@ namespace Game
             var abilityController = ConfigureAbilityController(placeForUi, carController, profilePlayer);
             abilityController.ShowAbilities();
         }
-
-        #endregion
-
-        #region Methods
 
         private IAbilitiesController ConfigureAbilityController(
             Transform placeForUi,
@@ -60,7 +54,5 @@ namespace Game
 
             return abilitiesController;
         }
-
-        #endregion
     }
 }

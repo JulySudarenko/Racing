@@ -1,4 +1,5 @@
-﻿using Rewards;
+﻿using DoTween.Configs;
+using Rewards;
 using Tools;
 using UnityEngine;
 
@@ -14,8 +15,6 @@ namespace Game.Observer
 
     public class AIController : BaseController
     {
-        private Enemy _enemy;
-
         public AIController(Transform placeForUi)
         {
             Init(placeForUi);
@@ -28,7 +27,7 @@ namespace Game.Observer
             var currencyView = Object.Instantiate(currencyViewPrefab);
             currencyView.Init();
             AddGameObjects(currencyView.gameObject);
-            
+
             var aiViewPath = new ResourcePath {PathResource = $"Prefabs/{nameof(AIView)}"};
             var aiView = ResourceLoader.LoadAndInstantiateObject<AIView>(aiViewPath, placeForUi, false);
             aiView.Init(currencyView);

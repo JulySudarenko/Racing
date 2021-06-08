@@ -8,6 +8,22 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Plugins" t="Include">
+          <e p="Demigiant" t="Include">
+            <e p="DOTween" t="Include">
+              <e p="Modules" t="Include">
+                <e p="DOTweenModuleAudio.cs" t="Include" />
+                <e p="DOTweenModulePhysics.cs" t="Include" />
+                <e p="DOTweenModulePhysics2D.cs" t="Include" />
+                <e p="DOTweenModuleSprite.cs" t="Include" />
+                <e p="DOTweenModuleUI.cs" t="Include" />
+                <e p="DOTweenModuleUnityVersion.cs" t="Include" />
+                <e p="DOTweenModuleUtils.cs" t="Include" />
+              </e>
+              <e p="readme.txt" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="BaseController.cs" t="Include" />
           <e p="ContentDataSource" t="Include">
@@ -26,6 +42,15 @@
               <e p="UpgradeItemConfig.cs" t="Include" />
               <e p="UpgradeItemConfigDataSource.cs" t="Include" />
             </e>
+          </e>
+          <e p="DOTween" t="Include">
+            <e p="ButtonScaleBehavior.cs" t="Include" />
+            <e p="CameraShakeBehaviour.cs" t="Include" />
+            <e p="Configs" t="Include">
+              <e p="ScaleData.cs" t="Include" />
+              <e p="ShakeData.cs" t="Include" />
+            </e>
+            <e p="MessageBoxBehaviour.cs" t="Include" />
           </e>
           <e p="Features" t="Include">
             <e p="AbilitiesFeature" t="Include">

@@ -1,4 +1,5 @@
 ﻿using Company.Project.Features.Shed;
+using DoTween.Configs;
 using Game;
 using Profile;
 using Rewards;
@@ -37,17 +38,20 @@ internal sealed class MainController : BaseController
                 break;
             case GameState.Shed:
                 _shedController = new ShedController(_placeForUi, _profilePlayer);
-                _shedController.Enter();
                 _mainMenuController?.Dispose();
                 break;
             case GameState.Reward:
                 _rewardController = new RewardController();
                 _mainMenuController?.Dispose();
                 break;
+            case GameState.Exit:
+                Application.Quit();
+                break;
             default:
                 _mainMenuController?.Dispose();
                 _gameController?.Dispose();
                 _shedController?.Dispose();
+                _rewardController?.Dispose();
                 break;
         }
     }
@@ -57,6 +61,7 @@ internal sealed class MainController : BaseController
         _mainMenuController?.Dispose();
         _gameController?.Dispose();
         _shedController?.Dispose();
+        _rewardController?.Dispose();
         _profilePlayer.CurrentState.UnSubscriptionOnChange(OnChangeGameState);
         base.OnDispose();
     }

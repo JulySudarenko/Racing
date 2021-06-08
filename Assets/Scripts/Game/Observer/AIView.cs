@@ -1,4 +1,5 @@
-﻿using Rewards;
+﻿using DoTween;
+using Rewards;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -24,10 +25,11 @@ namespace Game.Observer
 
         [SerializeField] private int _winWoodBonus = 100;
         [SerializeField] private int _winDiamondBonus = 50;
+        [SerializeField] private int _maxCrimeRate = 5;
 
         private CurrencyView _currencyView;
-
-        private int _allCountMoneyPlayer;
+        private CameraShakeBehaviour _cameraShaker;
+        
         private int _allCountHealthPlayer;
         private int _allCountForcePlayer;
         private int _allCountCrimeRatePlayer;
@@ -57,6 +59,8 @@ namespace Game.Observer
 
             _currencyView = currencyView;
 
+            _cameraShaker = new CameraShakeBehaviour();
+            
             _addHealthButton.onClick.AddListener(() => ChangeHealth(true));
             _minusHealthButton.onClick.AddListener(() => ChangeHealth(false));
 
@@ -88,16 +92,6 @@ namespace Game.Observer
             _force.Detach(_enemy);
         }
 
-        private void ChangeMoney(bool isAddCount)
-        {
-            if (isAddCount)
-                _allCountMoneyPlayer++;
-            else
-                _allCountMoneyPlayer--;
-
-            ChangeDataWindow(_allCountMoneyPlayer, DataType.Money);
-        }
-
         private void ChangeHealth(bool isAddCount)
         {
             if (isAddCount)
@@ -123,8 +117,8 @@ namespace Game.Observer
             if (isAddCount)
             {
                 _allCountCrimeRatePlayer++;
-                if (_allCountCrimeRatePlayer > 5)
-                    _allCountCrimeRatePlayer = 5;
+                if (_allCountCrimeRatePlayer > _maxCrimeRate)
+                    _allCountCrimeRatePlayer = _maxCrimeRate;
             }
             else
             {
@@ -141,7 +135,7 @@ namespace Game.Observer
         {
             if (_allCountCrimeRatePlayer < 3)
             {
-                Debug.Log("<color=#07FF00>Passed through</color>");
+                Debug.Log("<color=#07FF10>Passed through</color>");
             }
         }
 
@@ -156,6 +150,7 @@ namespace Game.Observer
             {
                 _currencyView.AddDiamonds(-_winDiamondBonus / 2);
                 _currencyView.AddWood(-_winWoodBonus / 2);
+                _cameraShaker.CreateShake();
             }
 
             Debug.Log(_allCountForcePlayer >= _enemy.Force

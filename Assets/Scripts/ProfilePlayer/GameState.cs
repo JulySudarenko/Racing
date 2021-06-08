@@ -7,7 +7,8 @@ namespace Profile
         Start = 1,
         Game  = 2,
         Shed = 3,
-        Reward = 4
+        Reward = 4,
+        Exit = 5
     }
 }
 
