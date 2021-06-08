@@ -1,4 +1,5 @@
-﻿using Profile;
+﻿using DoTween.Configs;
+using Profile;
 using Profile.Analytic;
 using UnityEngine;
 
@@ -8,8 +9,7 @@ internal sealed class Root : MonoBehaviour
     [SerializeField] private float _speedCar = 15.0f;
     [SerializeField] private float _forceCar = 15.0f;
     [SerializeField] private int _crimeRate = 4;
-
-
+    
     private MainController _mainController;
 
     private void Awake()

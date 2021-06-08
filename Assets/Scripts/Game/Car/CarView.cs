@@ -9,7 +9,7 @@ namespace Game
         [SerializeField] private WheelJoint2D _forwardWheel;
         [SerializeField] private ParticleSystem _smoke;
 
-        private readonly float _coefficient = 800.0f;
+        private readonly float _coefficient = 2000.0f;
         private readonly float _hightSpeedParam = 120.0f;
         private readonly float _smokeLifeTimeStart = 0.3f;
         private readonly float _smokeLifeTimeDelta = 0.2f;

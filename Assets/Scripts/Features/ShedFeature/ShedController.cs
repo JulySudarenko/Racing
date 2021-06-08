@@ -30,6 +30,7 @@ namespace Company.Project.Features.Shed
             _inventoryController = CreateItemController(placeForUi);
             _upgradable = profilePlayer.CurrentCar;
             _profilePlayer = profilePlayer;
+            Enter();
         }
 
         #endregion

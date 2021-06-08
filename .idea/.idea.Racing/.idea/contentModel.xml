@@ -8,6 +8,22 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Plugins" t="Include">
+          <e p="Demigiant" t="Include">
+            <e p="DOTween" t="Include">
+              <e p="Modules" t="Include">
+                <e p="DOTweenModuleAudio.cs" t="Include" />
+                <e p="DOTweenModulePhysics.cs" t="Include" />
+                <e p="DOTweenModulePhysics2D.cs" t="Include" />
+                <e p="DOTweenModuleSprite.cs" t="Include" />
+                <e p="DOTweenModuleUI.cs" t="Include" />
+                <e p="DOTweenModuleUnityVersion.cs" t="Include" />
+                <e p="DOTweenModuleUtils.cs" t="Include" />
+              </e>
+              <e p="readme.txt" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="BaseController.cs" t="Include" />
           <e p="ContentDataSource" t="Include">
@@ -26,6 +42,15 @@
               <e p="UpgradeItemConfig.cs" t="Include" />
               <e p="UpgradeItemConfigDataSource.cs" t="Include" />
             </e>
+          </e>
+          <e p="DOTween" t="Include">
+            <e p="ButtonScaleBehavior.cs" t="Include" />
+            <e p="CameraShakeBehaviour.cs" t="Include" />
+            <e p="Configs" t="Include">
+              <e p="ScaleData.cs" t="Include" />
+              <e p="ShakeData.cs" t="Include" />
+            </e>
+            <e p="MessageBoxBehaviour.cs" t="Include" />
           </e>
           <e p="Features" t="Include">
             <e p="AbilitiesFeature" t="Include">
@@ -79,9 +104,9 @@
             </e>
             <e p="Observer" t="Include">
               <e p="AIController.cs" t="Include" />
+              <e p="AIView.cs" t="Include" />
               <e p="DataPlayer.cs" t="Include" />
               <e p="Enemy.cs" t="Include" />
-              <e p="ObserverView.cs" t="Include" />
             </e>
             <e p="TapeBackground" t="Include">
               <e p="Background.cs" t="Include" />
@@ -112,6 +137,14 @@
               <e p="ShopProduct.cs" t="Include" />
               <e p="ShopTools.cs" t="Include" />
             </e>
+          </e>
+          <e p="Rewards" t="Include">
+            <e p="ContainerSlotRewardView.cs" t="Include" />
+            <e p="CurrencyView.cs" t="Include" />
+            <e p="Reward.cs" t="Include" />
+            <e p="RewardController.cs" t="Include" />
+            <e p="RewardType.cs" t="Include" />
+            <e p="RewardView.cs" t="Include" />
           </e>
           <e p="Root.cs" t="Include" />
           <e p="Tools" t="Include">

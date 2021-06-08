@@ -1,4 +1,5 @@
-﻿using Profile;
+﻿using DoTween.Configs;
+using Profile;
 using Tools;
 using UnityEngine;
 using Game.CursorTrail;
@@ -22,10 +23,10 @@ namespace Ui
             _view = ResourceLoader.LoadAndInstantiateObject<MainMenuView>(
                 new ResourcePath {PathResource = "Prefabs/mainMenu"}, placeForUi, false);
             AddGameObjects(_view.gameObject);
-            _view.Init(StartGame);
-            _view.InitShed(ShedEnter);
-
+            InitButtons();
+            
             var cursorTrailController = ConfigureCursorTrail();
+
         }
 
         #endregion
@@ -39,6 +40,14 @@ namespace Ui
             return cursorTrailController;
         }
 
+        private void InitButtons()
+        {
+            _view.InitStartGame(StartGame);
+            _view.InitShed(ShedEnter);
+            _view.InitReward(RewardEnter);
+            _view.InitExit(ExitGame);
+        }
+        
         private void StartGame()
         {
             _profilePlayer.CurrentState.Value = GameState.Game;
@@ -49,6 +58,17 @@ namespace Ui
         {
             _profilePlayer.CurrentState.Value = GameState.Shed;
             _profilePlayer.AnalyticTools.SendMessage("enter shed");
+        }
+
+        private void RewardEnter()
+        {
+            _profilePlayer.CurrentState.Value = GameState.Reward;
+            _profilePlayer.AnalyticTools.SendMessage("get reward");
+        }
+        
+        private void ExitGame()
+        {
+            _profilePlayer.CurrentState.Value = GameState.Exit;
         }
 
         #endregion
