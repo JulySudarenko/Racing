@@ -1,10 +1,13 @@
-﻿using Tools;
+﻿using Company.Project.Features.Abilities;
+using Tools;
 using UnityEngine;
 
 namespace Game
 {
-    internal sealed class CarController : BaseController
+    internal sealed class CarController : BaseController, IAbilityActivator
     {
+        #region Fields
+
         private readonly ResourcePath _viewPath = new ResourcePath {PathResource = "Prefabs/Car"};
 
         private CarView _view;
@@ -12,8 +15,12 @@ namespace Game
         private readonly IReadOnlySubscriptionProperty<float> _leftMove;
         private readonly IReadOnlySubscriptionProperty<float> _rightMove;
 
-       
-        public CarController(IReadOnlySubscriptionProperty<float> leftMove, 
+        #endregion
+
+
+        #region Life cycle
+
+        public CarController(IReadOnlySubscriptionProperty<float> leftMove,
             IReadOnlySubscriptionProperty<float> rightMove)
         {
             _view = LoadView();
@@ -32,17 +39,31 @@ namespace Game
             base.OnDispose();
         }
 
+        #endregion
+
+        #region Methods
+
         private CarView LoadView()
         {
             GameObject objView = Object.Instantiate(ResourceLoader.LoadPrefab(_viewPath));
             AddGameObjects(objView);
             return objView.GetComponent<CarView>();
         }
-        
+
+        #endregion
+
         private void Move(float value)
         {
             _diff.Value = value;
         }
-    } 
-}
 
+        #region IAbilityActivator
+
+        public GameObject GetViewObject()
+        {
+            return _view.gameObject;
+        }
+
+        #endregion
+    }
+}

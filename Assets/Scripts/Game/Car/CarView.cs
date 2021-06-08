@@ -5,16 +5,21 @@ namespace Game
 {
     internal sealed class CarView : MonoBehaviour
     {
-        [SerializeField] private HingeJoint2D _backWheel;
-        [SerializeField] private HingeJoint2D _forwardWheel;
+        [SerializeField] private WheelJoint2D _backWheel;
+        [SerializeField] private WheelJoint2D _forwardWheel;
         [SerializeField] private ParticleSystem _smoke;
+
+        private readonly float _coefficient = 2000.0f;
+        private readonly float _hightSpeedParam = 120.0f;
+        private readonly float _smokeLifeTimeStart = 0.3f;
+        private readonly float _smokeLifeTimeDelta = 0.2f;
+        private readonly float _smokeEmissionStart = 30.0f;
+        private readonly float _smokeEmissionDelta = 20.0f;
 
         private IReadOnlySubscriptionProperty<float> _diff;
         private JointMotor2D _backWheelMotor;
         private JointMotor2D _forwardWheelMotor;
-        private readonly float _coefficient = 300;
-        private float _hightSpeedParam = 350;
-        private float _speed = 0;
+        private float _speed = 0.0f;
 
         public void Init(IReadOnlySubscriptionProperty<float> diff)
         {
@@ -32,33 +37,32 @@ namespace Game
         private void Move(float value)
         {
             _speed = _coefficient * value;
-            Debug.Log(value);
-            Debug.Log(_speed);
-            Debug.Log("*****");
-
-            _backWheelMotor.motorSpeed = _speed;
-            _forwardWheelMotor.motorSpeed = _speed;
+            _backWheelMotor.motorSpeed = -_speed;
+            _forwardWheelMotor.motorSpeed = -_speed;
             _backWheel.motor = _backWheelMotor;
             _forwardWheel.motor = _forwardWheelMotor;
 
-            SmokeChange(value);
+            SmokeChange();
         }
 
-        private void SmokeChange(float value)
+        private void SmokeChange()
         {
             var emissionModule = _smoke.emission;
             var mainModule = _smoke.main;
-            Debug.Log(_hightSpeedParam * value);
-            if (Mathf.Abs(_speed) >= _hightSpeedParam * value)
+            if (_speed >= _hightSpeedParam)
             {
-                emissionModule.rateOverTime = 50;
-                mainModule.startLifetime = 0.5f;
+                emissionModule.rateOverTime = _smokeEmissionStart + _smokeEmissionDelta;
+                mainModule.startLifetime = _smokeLifeTimeStart + _smokeLifeTimeDelta;
             }
-
+            else if (_speed == 0)
+            {
+                emissionModule.rateOverTime = _smokeEmissionStart - _smokeEmissionDelta;
+                mainModule.startLifetime = _smokeLifeTimeStart - _smokeLifeTimeDelta;
+            }
             else
             {
-                emissionModule.rateOverTime = 30;
-                mainModule.startLifetime = 0.3f;
+                emissionModule.rateOverTime = _smokeEmissionStart;
+                mainModule.startLifetime = _smokeLifeTimeStart;
             }
         }
     }
