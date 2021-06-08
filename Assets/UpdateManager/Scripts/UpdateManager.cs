@@ -14,7 +14,7 @@
 /// </summary>
 
 namespace JoostenProductions {
-    public class UpdateManager : SingletonBehaviour<UpdateManager> {
+    public class  UpdateManager : SingletonBehaviour<UpdateManager> {
         // If someone needs this on scene switch, it'll be recreated. Will have to add proper cleanup support in case this is set to true
         protected override bool DoNotDestroyOnLoad { get { return false; } }
 
@@ -60,6 +60,7 @@ namespace JoostenProductions {
             if(isShuttingDown) return;
 
             AddItemToArray(behaviour);
+
         }
 
         public static void RemoveSpecificItem(OverridableMonoBehaviour behaviour) {
@@ -68,6 +69,7 @@ namespace JoostenProductions {
             if(isShuttingDown) return;
 
             if(Instance != null) RemoveSpecificItemFromArray(behaviour);
+
         }
 
         public static void RemoveSpecificItemAndDestroyComponent(OverridableMonoBehaviour behaviour) {
@@ -101,12 +103,14 @@ namespace JoostenProductions {
 
             if(behaviourType.GetMethod("LateUpdateMe").DeclaringType != overridableMonoBehaviourType)
                 SubscribeToLateUpdate(behaviour.LateUpdateMe);
+
         }
 
         private static void RemoveSpecificItemFromArray(OverridableMonoBehaviour behaviour) {
             UnsubscribeFromUpdate(behaviour.UpdateMe);
             UnsubscribeFromFixedUpdate(behaviour.FixedUpdateMe);
             UnsubscribeFromLateUpdate(behaviour.LateUpdateMe);
+
         }
 
         private void Update() {

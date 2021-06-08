@@ -5,8 +5,7 @@ namespace Game.TapeBackground
 {
     internal sealed class TapeBackgroundView : MonoBehaviour
     {
-        [SerializeField] 
-        private Background[] _backgrounds;
+        [SerializeField] private Background[] _backgrounds;
 
         private IReadOnlySubscriptionProperty<float> _diff;
 
@@ -18,7 +17,7 @@ namespace Game.TapeBackground
 
         private void OnDestroy()
         {
-            _diff?.SubscribeOnChange(Move);
+            _diff?.UnSubscriptionOnChange(Move);
         }
 
         private void Move(float value)
