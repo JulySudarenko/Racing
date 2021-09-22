@@ -1,5 +1,4 @@
-﻿using DoTween.Configs;
-using Profile;
+﻿using Profile;
 using Profile.Analytic;
 using UnityEngine;
 

@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: ui_graphic
+  m_EditorClassIdentifier: 
+  m_GroupName: ui_graphic
+  m_Data:
+    m_SerializedData: []
+  m_GUID: c8e82a9221f7a8240a77c2214dbad51d
+  m_SerializeEntries:
+  - m_GUID: f59401c5c79564fd1ae3bfb0876455a7
+    m_Address: Assets/Sprites/UI/Resource Vector Graphics/UI_Graphic_Resource_Gems.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Sprite
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 7e082cc2cf2a4433d85e388c6bf94234
+    m_Address: Assets/Sprites/UI/Resource Vector Graphics/UI_Graphic_Resource_Iron.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Sprite
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: e0eac6b76fdd842e88a7f8c75ecffaf4
+    m_Address: Assets/Sprites/UI/Resource Vector Graphics/UI_Graphic_Resource_Wood.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Sprite
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 853cba683335de647ad8895e9d0888c6, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 8013ff56668c8e3458d9edaa3c4101cc, type: 2}
+    - {fileID: 11400000, guid: d0e81aa009c6eef4382b76c874360108, type: 2}
