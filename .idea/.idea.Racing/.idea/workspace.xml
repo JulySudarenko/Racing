@@ -20,30 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d736d91-0361-4f9b-a9ec-16f4bbc601ec" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Racing/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Racing/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Racing/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Racing/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Racing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Racing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/DataSource/DOTween/DoTweenData.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/DataSource/DOTween/DoTweenData.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/DataSource/DOTween/ScaleDataStartButton.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/DataSource/DOTween/ScaleDataStartButton.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/DataSource/DOTween/ShakesDataOnLose.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/DataSource/DOTween/ShakesDataOnLose.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ContentDataSource/ContentDataSourceLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ContentDataSource/ContentDataSourceLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DOTween/ButtonScaleBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DOTween/ButtonScaleBehavior.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DOTween/CameraShakeBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DOTween/CameraShakeBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DOTween/DOTweenData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DOTween/DOTweenData.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DOTween/MessageBoxBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DOTween/MessageBoxBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DOTween/ScaleData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DOTween/ScaleData.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DOTween/ShakeData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DOTween/ShakeData.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Observer/AIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Observer/AIController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Observer/AIView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Observer/AIView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Root.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Root.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Root.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Root.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Alto-Sax-G4.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Alto-Sax-G4.wav.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Nylon-Guitar-C4.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Nylon-Guitar-C4.wav.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Rhodes-G2-M.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Rhodes-G2-M.wav.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/Resource Vector Graphics/UI_Graphic_Resource_Gems.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/UI/Resource Vector Graphics/UI_Graphic_Resource_Gems.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/Resource Vector Graphics/UI_Graphic_Resource_Iron.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/UI/Resource Vector Graphics/UI_Graphic_Resource_Iron.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/Resource Vector Graphics/UI_Graphic_Resource_Wood.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/UI/Resource Vector Graphics/UI_Graphic_Resource_Wood.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +63,9 @@
     <setting file="file://$PROJECT_DIR$/../../../../Unity/tetra_ul-racingrepository-09ab429d3ab0.2021-04-16/Assets/Script/BaseController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/2020.3.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/Raycasters/BaseRaycaster.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F84F74CE-C460-43BE-8965-07FA92F4C1AE/fb/b6c4effd/IDragHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C9B5231E-3651-48A4-BC21-0CC4E439206D/79/d60457e3/LightingExplorerTableColumn.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4D9F7249-F1DE-41E3-8466-8FEA10E9822F/27/fa4e2854/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.16.19/Editor/Settings/AddressableAssetSettings.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4D9F7249-F1DE-41E3-8466-8FEA10E9822F/55/3bf8e6cc/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.purchasing@2.2.2/Runtime/managed/Purchasing/ConfigurationBuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/2020.3.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventData/PointerEventData.cs" root0="SKIP_HIGHLIGHTING" />
@@ -85,19 +75,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/ProfilePlayer/Car.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ProfilePlayer/ProfilePlayer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Observer/ObserverController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Features/AbilitiesFeature/AbilitiesController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Observer/DataPlayer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Observer/Enemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Features/ShedFeature/Interfaces.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Rewards/ContainerSlotRewardView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Rewards/Reward.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Rewards/RewardType.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Features/InventoryFeature/InventoryView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Rewards/InstallView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Observer/ObserverView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewards/DailyRewardView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewards/DailyRewardController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewards/CurrencyView.cs" />
@@ -120,7 +97,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ContentDataSource/Items/ItemConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ContentDataSource/AbilityItems/AbilityItemConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ContentDataSource/AbilityItems/AbilityItemConfigDataSource.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Features/ShedFeature/ShedController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DoTween/MessageBoxBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DoTween/Configs/ScaleData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DoTween/Configs/ShakeData.cs" />
@@ -133,9 +109,23 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Observer/AIView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Root.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DoTween/ButtonScaleBehavior.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Features/ShedFeature/ShedController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Features/InventoryFeature/InventoryView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AssetsLoader/CreateAssetBundles.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AssetsLoader/LoadAssetsBundles.cs" />
+        <option value="$PROJECT_DIR$/Assets/AssetBundles-Browser-master/Tests/Editor/ABModelTests.cs" />
+        <option value="$PROJECT_DIR$/Assets/AssetBundles-Browser-master/Tests/Editor/Util/TestUtil.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/AssetsLoader/LoadAssetsBundles.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/AssetsLoader/CreateAssetBundles.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Game/Observer/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Game/Observer/DataPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/AssetsLoader/AssetBundlesBrowse/DataSpriteBundle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/AssetsLoader/AssetBundlesBrowse/DataAudioBundle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/AssetsLoader/AssetBundlesBrowse/AssetBundleViewBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Root.cs" />
       </list>
     </option>
   </component>
@@ -157,10 +147,10 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="18228">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="18228" />
+      <option name="pid" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -305,53 +295,25 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Game/InputGame/EndlessMoveView.cs</url>
           <line>21</line>
-          <properties documentPath="D:\geekbrains.ru\Projects\Unity\Racing\Assets\Scripts\Game\InputGame\EndlessMoveView.cs" initialLine="21">
-            <startOffsets>
-              <option value="578" />
-            </startOffsets>
-            <endOffsets>
-              <option value="615" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="D:\geekbrains.ru\Projects\Unity\Racing\Assets\Scripts\Game\InputGame\EndlessMoveView.cs" initialLine="21" />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Features/AbilitiesFeature/Abilities/TankOilAbility.cs</url>
           <line>28</line>
-          <properties documentPath="D:\geekbrains.ru\Projects\Unity\Racing\Assets\Scripts\Features\AbilitiesFeature\Abilities\TankOilAbility.cs" initialLine="28">
-            <startOffsets>
-              <option value="581" />
-            </startOffsets>
-            <endOffsets>
-              <option value="628" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="D:\geekbrains.ru\Projects\Unity\Racing\Assets\Scripts\Features\AbilitiesFeature\Abilities\TankOilAbility.cs" initialLine="28" />
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Features/AbilitiesFeature/AbilityRepository.cs</url>
           <line>43</line>
-          <properties documentPath="D:\geekbrains.ru\Projects\Unity\Racing\Assets\Scripts\Features\AbilitiesFeature\AbilityRepository.cs" initialLine="43">
-            <startOffsets>
-              <option value="1266" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1300" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="D:\geekbrains.ru\Projects\Unity\Racing\Assets\Scripts\Features\AbilitiesFeature\AbilityRepository.cs" initialLine="43" />
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/DoTween/ButtonScaleBehavior.cs</url>
           <line>11</line>
-          <properties documentPath="D:\geekbrains.ru\Projects\Unity\Racing\Assets\Scripts\DoTween\ButtonScaleBehavior.cs" initialLine="31">
-            <startOffsets>
-              <option value="268" />
-            </startOffsets>
-            <endOffsets>
-              <option value="349" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="D:\geekbrains.ru\Projects\Unity\Racing\Assets\Scripts\DoTween\ButtonScaleBehavior.cs" initialLine="31" />
           <option name="timeStamp" value="64" />
         </line-breakpoint>
       </breakpoints>

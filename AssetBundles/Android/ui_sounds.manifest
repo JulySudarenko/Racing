@@ -1,0 +1,19 @@
+ManifestFileVersion: 0
+CRC: 526346106
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1573812ed359bd482a63106ba0b2152f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Sounds/Alto-Sax-G4.wav
+- Assets/Sounds/Nylon-Guitar-C4.wav
+- Assets/Sounds/Rhodes-G2-M.wav
+Dependencies: []
