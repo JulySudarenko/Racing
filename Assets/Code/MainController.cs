@@ -5,6 +5,7 @@ using Profile;
 using Rewards;
 using Ui;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 
 internal sealed class MainController : BaseController
 {
@@ -12,13 +13,15 @@ internal sealed class MainController : BaseController
     private GameController _gameController;
     private ShedController _shedController;
     private RewardController _rewardController;
+    private AssetReference _mainMenuPrefab;
     private readonly Transform _placeForUi;
     private readonly ProfilePlayer _profilePlayer;
 
-    public MainController(Transform placeForUi, ProfilePlayer profilePlayer)
+    public MainController(Transform placeForUi, ProfilePlayer profilePlayer, AssetReference mainMenuPrefab)
     {
         _profilePlayer = profilePlayer;
         _placeForUi = placeForUi;
+        _mainMenuPrefab = mainMenuPrefab;
         OnChangeGameState(_profilePlayer.CurrentState.Value);
         profilePlayer.CurrentState.SubscribeOnChange(OnChangeGameState);
     }
@@ -28,7 +31,7 @@ internal sealed class MainController : BaseController
         switch (state)
         {
             case GameState.Start:
-                _mainMenuController = new MainMenuController(_placeForUi, _profilePlayer);
+                _mainMenuController = new MainMenuController(_placeForUi, _profilePlayer, _mainMenuPrefab);
                 _gameController?.Dispose();
                 _shedController?.Dispose();
                 break;

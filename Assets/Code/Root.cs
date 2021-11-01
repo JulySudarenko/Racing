@@ -1,6 +1,7 @@
 ﻿using Profile;
 using Profile.Analytic;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 
 internal sealed class Root : MonoBehaviour
 {
@@ -8,6 +9,8 @@ internal sealed class Root : MonoBehaviour
     [SerializeField] private float _speedCar = 15.0f;
     [SerializeField] private float _forceCar = 15.0f;
     [SerializeField] private int _crimeRate = 4;
+
+    [SerializeField] private AssetReference _mainMenuPrefab;
     
     private MainController _mainController;
 
@@ -15,7 +18,7 @@ internal sealed class Root : MonoBehaviour
     {
         ProfilePlayer profilePlayer = new ProfilePlayer(_speedCar, _forceCar, _crimeRate, new UnityAnalyticTools());
         profilePlayer.CurrentState.Value = GameState.Start;
-        _mainController = new MainController(_placeForUi, profilePlayer);
+        _mainController = new MainController(_placeForUi, profilePlayer, _mainMenuPrefab);
     }
 
     private void OnDestroy()
