@@ -50,7 +50,6 @@ namespace Ui
             _view = view.GetComponent<MainMenuView>();
             AddGameObjects(_view.gameObject);
             InitButtons();
-
         }
 
         private void InitButtons()
@@ -83,7 +82,7 @@ namespace Ui
         {
             _profilePlayer.CurrentState.Value = GameState.Exit;
         }
-        
+
         protected override void OnDispose()
         {
             Addressables.Release(_mainMenuLoaded);
