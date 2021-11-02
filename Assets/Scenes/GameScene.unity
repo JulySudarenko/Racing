@@ -238,11 +238,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b28390e0281076449d38f69e15388ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _doTweenData: {fileID: 11400000, guid: 095b39ee893da7a4296c2a323903d423, type: 2}
   _placeForUi: {fileID: 1364129558}
   _speedCar: 15
   _forceCar: 15
   _crimeRate: 4
+  _mainMenuPrefab:
+    m_AssetGUID: fdbb69f1ad5b7c748b00106dc1b66461
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
 --- !u!114 &1364129555
 MonoBehaviour:
   m_ObjectHideFlags: 0

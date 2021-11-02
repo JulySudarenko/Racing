@@ -165,7 +165,7 @@ GameObject:
   - component: {fileID: 1427694869344921854}
   - component: {fileID: 510453590083533450}
   m_Layer: 5
-  m_Name: mainMenu
+  m_Name: MainMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -426,7 +426,7 @@ GameObject:
   - component: {fileID: 98041309005251500}
   - component: {fileID: 2847940843097120268}
   m_Layer: 5
-  m_Name: buttonStart
+  m_Name: Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -533,8 +533,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
-  _scaleData: {fileID: 0}
-  _scaleUp: {x: 1.2, y: 1.2}
 --- !u!1 &7510298033001603720
 GameObject:
   m_ObjectHideFlags: 0
@@ -869,31 +867,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1267107645652854, guid: ccfa39d92f740384ab61f370ae7f2e95, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224188433852734384, guid: ccfa39d92f740384ab61f370ae7f2e95, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224188433852734384, guid: ccfa39d92f740384ab61f370ae7f2e95, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224188433852734384, guid: ccfa39d92f740384ab61f370ae7f2e95, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 892
       objectReference: {fileID: 0}
     - target: {fileID: 224188433852734384, guid: ccfa39d92f740384ab61f370ae7f2e95, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 379
       objectReference: {fileID: 0}
     - target: {fileID: 224188433852734384, guid: ccfa39d92f740384ab61f370ae7f2e95, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 446
       objectReference: {fileID: 0}
     - target: {fileID: 224188433852734384, guid: ccfa39d92f740384ab61f370ae7f2e95, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -189.5
       objectReference: {fileID: 0}
     - target: {fileID: 224976191027818946, guid: ccfa39d92f740384ab61f370ae7f2e95, type: 3}
       propertyPath: m_Pivot.x

@@ -153,6 +153,10 @@
             <e p="MainMenuController.cs" t="Include" />
             <e p="MainMenuView.cs" t="Include" />
           </e>
+          <e p="Notifications" t="Include">
+            <e p="LocalizationWindow.cs" t="Include" />
+            <e p="NotificationWindow.cs" t="Include" />
+          </e>
           <e p="ProfilePlayer" t="Include">
             <e p="Ads" t="Include">
               <e p="IAdsShower.cs" t="Include" />

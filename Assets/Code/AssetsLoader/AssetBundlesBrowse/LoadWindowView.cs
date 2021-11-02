@@ -1,21 +1,33 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.UI;
 
 namespace AssetsLoader.AssetBundlesBrowse
 {
     public class LoadWindowView : AssetBundleViewBase
     {
-        [SerializeField]
-        private Button _loadAsssetsButton;
+        [SerializeField] private AssetReference _loadPrefab;
+        [SerializeField] private RectTransform _mountSpawnTransform;
+        [SerializeField] private Button _loadAsssetsButton;
+        [SerializeField] private Button _spawnAssetsButton;
+
+        private List<AsyncOperationHandle<GameObject>> _addressablePrefabs = new List<AsyncOperationHandle<GameObject>>();
 
         private void Start()
         {
             _loadAsssetsButton.onClick.AddListener(LoadAsset);
+            _spawnAssetsButton.onClick.AddListener(CreateAdressablesPrefab);
         }
 
         private void OnDestroy()
         {
             _loadAsssetsButton.onClick.RemoveAllListeners();
+            foreach (var addressablePrefab in _addressablePrefabs)
+                Addressables.ReleaseInstance(addressablePrefab);
+      
+            _addressablePrefabs.Clear();
         }
 
         private void LoadAsset()
@@ -24,5 +36,12 @@ namespace AssetsLoader.AssetBundlesBrowse
       
             StartCoroutine(DownloadAndSetAssetBundle());
         }
+        
+        private void CreateAdressablesPrefab()
+        {
+            var addressablePrefab = Addressables.InstantiateAsync(_loadPrefab, _mountSpawnTransform);
+            _addressablePrefabs.Add(addressablePrefab);
+        }
+
     }
 }
